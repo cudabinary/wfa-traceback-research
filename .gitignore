@@ -1,0 +1,44 @@
+# Credentials and machine configuration
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.dpapi
+*credential*
+*secret*
+local_only/
+.aws/
+.codex/
+# Generated files and caches
+__pycache__/
+.pytest_cache/
+*.pyc
+build/
+outputs/
+runs/
+raw/
+*.log
+*.aux
+*.blg
+*.out
+*.synctex.gz
+*.exe
+*.dll
+*.so
+*.o
+# Large archives, datasets, and model weights remain in B2
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.zst
+*.pt
+*.pth
+*.npy
+*.npz
+*.bin
+*.ncu-rep
+# No automation is enabled by this repository seed
+.github/workflows/

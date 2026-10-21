@@ -1,0 +1,854 @@
+{
+  "schema": "paper-source-manifest-v1",
+  "paper": "wfa",
+  "scope": "HISTORICAL_SEALED_SELECTED_FILES",
+  "global_archive_index_commit": "d9d9fea32ef0d9cf2de38210596470d4c6c3f1f5",
+  "bucket": "cudabinary-research-archive-20261021",
+  "paper_prefix": "research-archive/papers/wfa-traceback/",
+  "admitted": [
+    {
+      "path": "code/bench_common.hpp",
+      "bytes": 872,
+      "sha256": "dd31c04521328b367a77666b714b8636b2e4a1e5b5fc5bb67622303a2a18fd60",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/bench_common.hpp",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 64446458,
+          "bytes": 872,
+          "pack_index": 666,
+          "pack_sha256": "23bb41c85ec4599d15c6e9c78d2af54582766f6cc5601a557490c0c4ab224a41",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "16dc078694b3cfcdc189bb3cf04eb4d1720b703e",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0667b737_d20261021_m011201_c005_v0501031_t0011_u01792545121860",
+            "fileName": "research-archive/packs/sha256/23/23bb41c85ec4599d15c6e9c78d2af54582766f6cc5601a557490c0c4ab224a41.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792545121860
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/bench_cpu.cpp",
+      "bytes": 2255,
+      "sha256": "92073f4315e6de905902899ed0f7bd68835685ec340d4938c082441739abd5f0",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/bench_cpu.cpp",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 30305303,
+          "bytes": 2255,
+          "pack_index": 462,
+          "pack_sha256": "8700716c72749a8ecb0bf4750580a91b88269587b884ab91f38f9ac645444a4d",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "17400f4209c4f21a56b1b41fdfd2fd0e7ab8424e",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827dbeb1_d20261021_m004456_c005_v0501048_t0046_u01792543496078",
+            "fileName": "research-archive/packs/sha256/87/8700716c72749a8ecb0bf4750580a91b88269587b884ab91f38f9ac645444a4d.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792543496078
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/bench_wfagpu.cpp",
+      "bytes": 5929,
+      "sha256": "d5bfa6a03ed8728f202af762882eedfc1bd6c0a84ff1d6beddcd29e72e709922",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/bench_wfagpu.cpp",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 59832558,
+          "bytes": 5929,
+          "pack_index": 630,
+          "pack_sha256": "448af07055ed06d4acd95dc48c1773ce5d7dae9d1eb8a62754a6b2c9c24cc729",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "9af9df412f23ee4a87bd1b0f45bf9f4e59461c4d",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0667914a_d20261021_m010756_c005_v0501031_t0019_u01792544876590",
+            "fileName": "research-archive/packs/sha256/44/448af07055ed06d4acd95dc48c1773ce5d7dae9d1eb8a62754a6b2c9c24cc729.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544876590
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/check_output.py",
+      "bytes": 1418,
+      "sha256": "770b3e1bb67def16af42b6ed8264b16662d9b76a56991a82104d80302eef44f5",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/check_output.py",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 20392689,
+          "bytes": 1418,
+          "pack_index": 386,
+          "pack_sha256": "21cb947d2c0c72b37f9b6f0358154501bbb8dfe8d997f27c68ea1528379a0871",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "7fad99c467de77d4f4589731cadca4ce7d960bb7",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827d0d31_d20261021_m003415_c005_v0501048_t0036_u01792542855436",
+            "fileName": "research-archive/packs/sha256/21/21cb947d2c0c72b37f9b6f0358154501bbb8dfe8d997f27c68ea1528379a0871.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792542855436
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/configs.json",
+      "bytes": 975,
+      "sha256": "8c44c1e4d0135a4831ea8c889940a78e88d8ebaa03b5d78f11c09f489ecdbb5c",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/configs.json",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 34742252,
+          "bytes": 975,
+          "pack_index": 443,
+          "pack_sha256": "d8d717f76f5c337c6cff951d1ed1404d5bbabb174b9fe2912cf96964d2d65bf6",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "fdce1faf2821b74963380514a556edfeee322e33",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0666ea66_d20261021_m004237_c005_v0501031_t0008_u01792543357694",
+            "fileName": "research-archive/packs/sha256/d8/d8d717f76f5c337c6cff951d1ed1404d5bbabb174b9fe2912cf96964d2d65bf6.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792543357694
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/model.py",
+      "bytes": 6375,
+      "sha256": "1dbdafa67b7c3265b78fbef146e64e6ea57ae5f05e17c451c1fd29eae3006ca7",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/model.py",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 32278528,
+          "bytes": 6375,
+          "pack_index": 137,
+          "pack_sha256": "1e2cb9faee439ec4fee10a5a00c7b5eb92fd5a4053f8dac1c9b642d31fb04f84",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "971bf44e23e3881925d6b165a28b5b3efccf48f4",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827a9e54_d20261020_m235954_c005_v0501048_t0035_u01792540794857",
+            "fileName": "research-archive/packs/sha256/1e/1e2cb9faee439ec4fee10a5a00c7b5eb92fd5a4053f8dac1c9b642d31fb04f84.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792540794857
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/select_config.py",
+      "bytes": 2026,
+      "sha256": "67a3b26d6a3c14eac231b293f705e0314e983c180b9b68de37540754944d3905",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/select_config.py",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 49236748,
+          "bytes": 2026,
+          "pack_index": 354,
+          "pack_sha256": "eefcb10ff5e04b0b5220dc6ea491021dc697ac8e831b91f3556d5556812a472a",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "7c3673f7db90eaa3454589cd640237b7d1e8c6f8",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad066692c7_d20261021_m003013_c005_v0501031_t0028_u01792542613867",
+            "fileName": "research-archive/packs/sha256/ee/eefcb10ff5e04b0b5220dc6ea491021dc697ac8e831b91f3556d5556812a472a.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792542613867
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/compactor_extended.cu",
+      "bytes": 4364,
+      "sha256": "d6e8e8207ce1b8a40b2c026755cd93795796763938d2129a009eca9d850eab26",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/compactor_extended.cu",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 12423763,
+          "bytes": 4364,
+          "pack_index": 633,
+          "pack_sha256": "9d7a717ec8475e8b1a9ccff9dfaeddd0ddf315a996331fe594ea10c1b18545d8",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "381460dbc6d3154ffda834d13ebfcdcfc618e789",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827f3653_d20261021_m010821_c005_v0501048_t0030_u01792544901985",
+            "fileName": "research-archive/packs/sha256/9d/9d7a717ec8475e8b1a9ccff9dfaeddd0ddf315a996331fe594ea10c1b18545d8.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544901985
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/compactor_test.cu",
+      "bytes": 3309,
+      "sha256": "ab062801a8b2c92a4be4c47875786c7e567825749ce2512352cfa7f4eb51a09d",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/compactor_test.cu",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 4430845,
+          "bytes": 3309,
+          "pack_index": 534,
+          "pack_sha256": "a5afed4310500f2bf910dc7fa86b911426f3ecd23ba4b2e835794b39091e6aec",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "f770436e261c04609fc92808d4d6d36ba88c9d3c",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0667373c_d20261021_m005415_c005_v0501031_t0003_u01792544055835",
+            "fileName": "research-archive/packs/sha256/a5/a5afed4310500f2bf910dc7fa86b911426f3ecd23ba4b2e835794b39091e6aec.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544055835
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/experiment_trace.cuh",
+      "bytes": 7009,
+      "sha256": "e1b0a1b70ddabd090120291dbe678d7f7ea764034603dcbd57e4d4243addf59c",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/experiment_trace.cuh",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 2748940,
+          "bytes": 7009,
+          "pack_index": 697,
+          "pack_sha256": "f24e3fa45d7bf738e340e727642c23eb1cd086ae4259031ce8ae938ce1a5ab4a",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "353fb475357ad075087ebce971c3ddadacb6f3bd",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0667d6a7_d20261021_m011601_c005_v0501031_t0036_u01792545361268",
+            "fileName": "research-archive/packs/sha256/f2/f24e3fa45d7bf738e340e727642c23eb1cd086ae4259031ce8ae938ce1a5ab4a.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792545361268
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/allocation_control.cpp",
+      "bytes": 4424,
+      "sha256": "341e10d2c4faa3dec356c1d8a1c31057ebf62cb5b04448c557ee5d07df87ceac",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/allocation_control.cpp",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 65924723,
+          "bytes": 4424,
+          "pack_index": 183,
+          "pack_sha256": "11e63443d62a9312a21f52d967a7ce70453a273424b45e66a46f96f08eafbc15",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "a0cfc42dfbf27b28f7bf2357613706f83d199aeb",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0665dfbd_d20261021_m000542_c005_v0501031_t0013_u01792541142531",
+            "fileName": "research-archive/packs/sha256/11/11e63443d62a9312a21f52d967a7ce70453a273424b45e66a46f96f08eafbc15.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792541142531
+          }
+        }
+      ]
+    },
+    {
+      "path": "code/fallback_observer.cpp",
+      "bytes": 1467,
+      "sha256": "fe2a59401e46fb4af6c85d2bb3504322b35ad435b4457c8cfcaa9c573605d238",
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/fallback_observer.cpp",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 24111686,
+          "bytes": 1467,
+          "pack_index": 764,
+          "pack_sha256": "9cf1e1966cb8b648ec1c2a12c63e439de804f40cab989a22cb7da675aaa6fd34",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "31816b23581e7bce09bf10c5a8c51908f220dad3",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0668132c_d20261021_m012444_c005_v0501031_t0007_u01792545884047",
+            "fileName": "research-archive/packs/sha256/9c/9cf1e1966cb8b648ec1c2a12c63e439de804f40cab989a22cb7da675aaa6fd34.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792545884047
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/main.tex",
+      "bytes": 27943,
+      "sha256": "5ea4fdd8a113e4ed33cc63af81dc507d19001adf4f560d3dec09de1b6900dbaa",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/main.tex",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 51561653,
+          "bytes": 27943,
+          "pack_index": 317,
+          "pack_sha256": "8add32cebb9627ee53035028f4e4b160f2ad12ff7009362fb9086047290c62e3",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "a121306156e1f2926f6623755fbe556890a3758b",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827c50da_d20261021_m002351_c005_v0501048_t0033_u01792542231235",
+            "fileName": "research-archive/packs/sha256/8a/8add32cebb9627ee53035028f4e4b160f2ad12ff7009362fb9086047290c62e3.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792542231235
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/supplement.tex",
+      "bytes": 24464,
+      "sha256": "3d87f96f8506779c07e69a719ea6815701659792476c8b3bd96e129054f21c70",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/supplement.tex",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 64687269,
+          "bytes": 24464,
+          "pack_index": 217,
+          "pack_sha256": "1c28f5cf7c1ec810e58439b0a57ffc8416e33599223df5b389f82a59d8fbcce9",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "fb30041e5fe9cb349989c9e6d54ff1161822fa4c",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0665fc05_d20261021_m000938_c005_v0501031_t0044_u01792541378156",
+            "fileName": "research-archive/packs/sha256/1c/1c28f5cf7c1ec810e58439b0a57ffc8416e33599223df5b389f82a59d8fbcce9.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792541378156
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/references.bib",
+      "bytes": 4262,
+      "sha256": "6d1f9287e886bf8385c399fddbf21b582f943f6a90c5a77fa297a715a0574f6b",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/references.bib",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 48015225,
+          "bytes": 4262,
+          "pack_index": 364,
+          "pack_sha256": "b536801f1cc62bc0caf9635bb7817c0fa260595deb562eb3def94675b9a6ddb1",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "8731f4bfbc93d50d070fec66c5b1f04dc1561005",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad06669adf_d20261021_m003125_c005_v0501031_t0031_u01792542685438",
+            "fileName": "research-archive/packs/sha256/b5/b536801f1cc62bc0caf9635bb7817c0fa260595deb562eb3def94675b9a6ddb1.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792542685438
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/results_macros.tex",
+      "bytes": 385,
+      "sha256": "f49a92693b9418ebb74b2bdecbea41fbff174c9cce42fb76ce4164473a98d9a3",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/results_macros.tex",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 44460130,
+          "bytes": 385,
+          "pack_index": 739,
+          "pack_sha256": "3b54ab4a5f703c063a0e6bd42d8c79c340edcd56a2b9e25873b24a01bb34e67b",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "918dbb172eb917c8314a86146f76ef4c688183f0",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad8282802956_d20261021_m012145_c005_v0501048_t0034_u01792545705365",
+            "fileName": "research-archive/packs/sha256/3b/3b54ab4a5f703c063a0e6bd42d8c79c340edcd56a2b9e25873b24a01bb34e67b.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792545705365
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/IEEEtran.cls",
+      "bytes": 288304,
+      "sha256": "c972aca108fda004c3514d63658e02816da2e54d9a1451e870b9bd970e003f55",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/IEEEtran.cls",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 54434307,
+          "bytes": 288304,
+          "pack_index": 610,
+          "pack_sha256": "1d9cdd144085b58043a3b5515c606b7bb88014eacae9271115d340003f83bf7c",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "6495d59af8e64ab46f0ae6eae552091285e566f8",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827ef333_d20261021_m010457_c005_v0501048_t0033_u01792544697268",
+            "fileName": "research-archive/packs/sha256/1d/1d9cdd144085b58043a3b5515c606b7bb88014eacae9271115d340003f83bf7c.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544697268
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/main.bbl",
+      "bytes": 3970,
+      "sha256": "af8d809caba92c383728382572cd2036aa0e8685aea5921fc5a683b16fa9faf1",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/main.bbl",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 30477109,
+          "bytes": 3970,
+          "pack_index": 541,
+          "pack_sha256": "f43e1f23cf9803d4de6ee8230fbc1aec1930a6291acc6a24384b6c9ca5983db5",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "313a08ebdf8937a10d4be37257c5aed4bc8400ea",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827e5b22_d20261021_m005508_c005_v0501048_t0037_u01792544108167",
+            "fileName": "research-archive/packs/sha256/f4/f43e1f23cf9803d4de6ee8230fbc1aec1930a6291acc6a24384b6c9ca5983db5.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544108167
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/tables/main_rows.tex",
+      "bytes": 870,
+      "sha256": "c3f3a7a2db7ace5dbc05f72be929e9d4270d1470ec57acc73b15010f3eebd881",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/tables/main_rows.tex",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 62161782,
+          "bytes": 870,
+          "pack_index": 593,
+          "pack_sha256": "73ca45907c279d71acda29c6cf0b359aaabab17663dd62f45f136650884f73c5",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "e0eee67d4e3adf100957c51d8f123883ad0351a3",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad06676cdd_d20261021_m010256_c005_v0501031_t0039_u01792544576383",
+            "fileName": "research-archive/packs/sha256/73/73ca45907c279d71acda29c6cf0b359aaabab17663dd62f45f136650884f73c5.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544576383
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/figures/budget_time.pdf",
+      "bytes": 42313,
+      "sha256": "044af5f822c4a7c87a3758a195f0654290721353dbb329b1232e9e7a545ad9ee",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/figures/budget_time.pdf",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 49865596,
+          "bytes": 42313,
+          "pack_index": 12,
+          "pack_sha256": "46fdcdc57de017867a8cbb9e333a72069bb298b4fea3ca46702e1857093bb95f",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "fd0823cdc7426e735bb019260476b37036483a18",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10157c5c3741e93f_d20261020_m232611_c005_v0501026_t0023_u01792538771906",
+            "fileName": "research-archive/packs/sha256/46/46fdcdc57de017867a8cbb9e333a72069bb298b4fea3ca46702e1857093bb95f.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792538771906
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/figures/budget_time.svg",
+      "bytes": 31275,
+      "sha256": "41ace19072b03826bc60558d4aa77e532892ca6ba1ca266fefb2ab00ee2f06c1",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/figures/budget_time.svg",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 52087781,
+          "bytes": 31275,
+          "pack_index": 228,
+          "pack_sha256": "50528f96f6e02cc623a0150612b133e414d58c27dc265adb3d2a178990a3a780",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "c65551f0ae2e63651e3e2d251d853286553a20e9",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827b57a2_d20261021_m001055_c005_v0501048_t0030_u01792541455532",
+            "fileName": "research-archive/packs/sha256/50/50528f96f6e02cc623a0150612b133e414d58c27dc265adb3d2a178990a3a780.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792541455532
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/figures/gc_address_map.pdf",
+      "bytes": 35888,
+      "sha256": "87e19d0c100aeb37939ce2d8e2b65e5cf9bbd2056240828c5426bf04a3ce86c0",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/figures/gc_address_map.pdf",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 12127206,
+          "bytes": 35888,
+          "pack_index": 428,
+          "pack_sha256": "955e9a6d93669c8789a43d880188fc3aa383808b45bc4f394b08c169f1e7c9e7",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "ad04be36e90c026d85bfa32f6c2565e269b46284",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827d6af7_d20261021_m003956_c005_v0501048_t0044_u01792543196172",
+            "fileName": "research-archive/packs/sha256/95/955e9a6d93669c8789a43d880188fc3aa383808b45bc4f394b08c169f1e7c9e7.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792543196172
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/figures/mechanism.pdf",
+      "bytes": 56569,
+      "sha256": "2346f2a79c192078098a85fb0857cfd835f204f9e6b03c3d48b7ad8c1298b488",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/figures/mechanism.pdf",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 35974758,
+          "bytes": 56569,
+          "pack_index": 146,
+          "pack_sha256": "b6f6433b2b3ad913f53528f3f0b9c9f52ab2b0ebdc1612179942e31c0b48bdbd",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "a611d97f75c9ab54896f6a85e00a8c6785f54caf",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0665be2c_d20261021_m000057_c005_v0501031_t0026_u01792540857998",
+            "fileName": "research-archive/packs/sha256/b6/b6f6433b2b3ad913f53528f3f0b9c9f52ab2b0ebdc1612179942e31c0b48bdbd.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792540857998
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/source/figures/mechanism.svg",
+      "bytes": 71378,
+      "sha256": "8a7859f0e051b4acba150ee288423170b2937e6df822aebf5be0ca10bba66dd8",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/figures/mechanism.svg",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 51797336,
+          "bytes": 71378,
+          "pack_index": 439,
+          "pack_sha256": "c05708c7e60a17c8b20344795ce61f5220973512e8dfb5a636040f7c639e4777",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "458a891530d3a5b8d69f3b17c4c7d254b515d582",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827d8b7b_d20261021_m004149_c005_v0501048_t0036_u01792543309736",
+            "fileName": "research-archive/packs/sha256/c0/c05708c7e60a17c8b20344795ce61f5220973512e8dfb5a636040f7c639e4777.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792543309736
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/all_runs.csv",
+      "bytes": 6246,
+      "sha256": "ca62e5f78bd5b7eed8e5bf8b1743ee353a3f788f2a4e6ef73f42fd39bdc882b0",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/evidence/ALL_RUNS.csv",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 29579846,
+          "bytes": 6246,
+          "pack_index": 611,
+          "pack_sha256": "992b7c97c76fd5207b6a265ee8ca10f38bad6a64632de4501d6f67e15a544cb8",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "aa8d4159f558fff230142adce5a3addb0f70f41b",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad06677b83_d20261021_m010505_c005_v0501031_t0041_u01792544705068",
+            "fileName": "research-archive/packs/sha256/99/992b7c97c76fd5207b6a265ee8ca10f38bad6a64632de4501d6f67e15a544cb8.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544705068
+          }
+        }
+      ]
+    },
+    {
+      "path": "results/results.json",
+      "bytes": 17625,
+      "sha256": "8a6ed61fae90f5d4933d65c9154a959776dcde6881ca88f62f8ee17be177da94",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/evidence/RESULTS.json",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 45133514,
+          "bytes": 17625,
+          "pack_index": 439,
+          "pack_sha256": "c05708c7e60a17c8b20344795ce61f5220973512e8dfb5a636040f7c639e4777",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "458a891530d3a5b8d69f3b17c4c7d254b515d582",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827d8b7b_d20261021_m004149_c005_v0501048_t0036_u01792543309736",
+            "fileName": "research-archive/packs/sha256/c0/c05708c7e60a17c8b20344795ce61f5220973512e8dfb5a636040f7c639e4777.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792543309736
+          }
+        }
+      ]
+    },
+    {
+      "path": "docs/historical_claims_1page.md",
+      "bytes": 2898,
+      "sha256": "d8e63be913fb84ad55cd06a8e6636eca9a259c146f4376c0db77e25c15dce098",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/CLAIMS_1PAGE.md",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 2059849,
+          "bytes": 2898,
+          "pack_index": 640,
+          "pack_sha256": "0954954ac2f211d527cdeddb27e4352d6ab8b6b22f85ca62ae3df99ecbd49b25",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "649b8e66efb81dd899a5caab9f8eff500277bb7c",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad06679b8c_d20261021_m010909_c005_v0501031_t0010_u01792544949463",
+            "fileName": "research-archive/packs/sha256/09/0954954ac2f211d527cdeddb27e4352d6ab8b6b22f85ca62ae3df99ecbd49b25.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544949463
+          }
+        }
+      ]
+    },
+    {
+      "path": "docs/historical_paper_outline_and_contributions.md",
+      "bytes": 1965,
+      "sha256": "b9df232b27e9078e10a628efec9993ed68509dc43860ac78a69934a5b7111227",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/PAPER_OUTLINE_AND_CONTRIBUTIONS.md",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 28200724,
+          "bytes": 1965,
+          "pack_index": 567,
+          "pack_sha256": "247b80ae8dba29e8737f987a3882c2e88116258670293e541dab385ba59a9e4f",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "d381a3947f0b3bb0976c3da37dcb1d6eafab12e5",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad066753b0_d20261021_m005848_c005_v0501031_t0028_u01792544328313",
+            "fileName": "research-archive/packs/sha256/24/247b80ae8dba29e8737f987a3882c2e88116258670293e541dab385ba59a9e4f.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792544328313
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/wfa_traceback_r2.pdf",
+      "bytes": 181337,
+      "sha256": "071da53dfd3abc53c3c42585b5ab521351f2c25e5d6dd1269e0aef444db0c5f6",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/main.pdf",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 35879554,
+          "bytes": 181337,
+          "pack_index": 24,
+          "pack_sha256": "1761ed7a6ec76535230786dfa21b3ea2eb534574c0328203e09a29ece9809d6f",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "3118fbd33f4573541ffe9af0b07fc306931ffca5",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f102f77ff5cab658a_d20261020_m232837_c005_v0501000_t0032_u01792538917615",
+            "fileName": "research-archive/packs/sha256/17/1761ed7a6ec76535230786dfa21b3ea2eb534574c0328203e09a29ece9809d6f.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792538917615
+          }
+        }
+      ]
+    },
+    {
+      "path": "manuscript/supplement_r2.pdf",
+      "bytes": 95505,
+      "sha256": "14dd76b908288f812a5568ad46325e49d2b49f8641be30e1b2cbc7fe9ee782e2",
+      "source_id": "WIN_PAPER/iceic2027_wfa_paper_r2_20261019/supplement.pdf",
+      "archive_extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 22059624,
+          "bytes": 95505,
+          "pack_index": 62,
+          "pack_sha256": "a3fa5bd6555079aaf77cea91cc9e8f0a3bbca8f31e69c16397bfe4e62d6c0f97",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "81667fa4dd56e8fef769dc0040e513c80772c3e0",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10157c5c37422160_d20261020_m233437_c005_v0501026_t0026_u01792539277417",
+            "fileName": "research-archive/packs/sha256/a3/a3fa5bd6555079aaf77cea91cc9e8f0a3bbca8f31e69c16397bfe4e62d6c0f97.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792539277417
+          }
+        }
+      ]
+    }
+  ],
+  "archive_only": [],
+  "original_modifications": 0,
+  "original_deletions": 0,
+  "new_research_results_imported": false
+}
