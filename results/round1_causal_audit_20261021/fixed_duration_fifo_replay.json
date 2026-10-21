@@ -1,0 +1,24 @@
+[
+  {
+    "run_id": "diag_g0c20w32",
+    "batch": 0,
+    "jobs": 108,
+    "measured_rescue_interval_sum_thread_seconds": 28.739891586,
+    "fixed_duration_four_worker_lower_bound_s": 7.1849728965,
+    "fixed_duration_FIFO_replay_makespan_s": 7.238732820000001,
+    "observed_max_thread_interval_sum_s": 10.794338406,
+    "native_prediction": false,
+    "exclusions": "Durations fixed from one observed run; excludes aligner setup, queue/sync/RLE costs; cannot model changed CPU/GPU contention, cache or service times."
+  },
+  {
+    "run_id": "diag_g0c20w32",
+    "batch": 1,
+    "jobs": 10,
+    "measured_rescue_interval_sum_thread_seconds": 1.342396345,
+    "fixed_duration_four_worker_lower_bound_s": 0.33559908625,
+    "fixed_duration_FIFO_replay_makespan_s": 0.39807764900000003,
+    "observed_max_thread_interval_sum_s": 0.9580602739999999,
+    "native_prediction": false,
+    "exclusions": "Durations fixed from one observed run; excludes aligner setup, queue/sync/RLE costs; cannot model changed CPU/GPU contention, cache or service times."
+  }
+]

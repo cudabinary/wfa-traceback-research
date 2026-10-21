@@ -1,0 +1,678 @@
+{
+  "status": "IDENTITY_INDEX_ONLY_NOT_RESTORATION_RECEIPT",
+  "scope": "112 inputs consumed at the initial raw audit; source IDs must be resolved and object versions pinned before any later restore.",
+  "files": [
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/MANIFEST.json",
+      "bytes": 162466,
+      "sha256": "fa19e2338b2f957d8de38e25424d949188c7ff0782f18cb0312a1050877a02ec",
+      "initial_original_manifest_check": "NOT_LISTED"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/SEAL.json",
+      "bytes": 367,
+      "sha256": "b6e8deb7c11036a83f816904383907047f097946da6b20a6524310529751f5d8",
+      "initial_original_manifest_check": "NOT_LISTED"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/evidence/BUILD_RECEIPT.json",
+      "bytes": 5547,
+      "sha256": "fd7e858dd48f5539a0ddeebb7e5bf1510167db0b853ed4db25f0807aaa034df4",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/evidence/ids/50k_all.ids.json",
+      "bytes": 150003,
+      "sha256": "82c86e7f8dbf2aead08a505e87b9b16eb850d01cd951825a312a9d8552a2aa64",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/evidence/reference_scores.json",
+      "bytes": 310562,
+      "sha256": "6da0ef898481c2a08b701388962f1417f3a24717dc07003dde93f1fa5436df77",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/cpu_unsupported.scores.ready.csv",
+      "bytes": 15894,
+      "sha256": "3af1d3a4c1407e62c0e8e72b20ad9964a18ab9da73cadf56f62f0a82e1fb8db4",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.batch_cuda_events.csv",
+      "bytes": 311,
+      "sha256": "8322ac0d6ab7453d396f001a624783246c86a04c7b8cacb7d4d06ae9b5e8b35c",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.cpu_events.csv",
+      "bytes": 376575,
+      "sha256": "7c008c8a929f1a90a8c6f1c99a12d41d327dbaaa79ad1ea5a2f9aa8fd38e5b49",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.gc_events.csv",
+      "bytes": 184,
+      "sha256": "9384b6383610036d55fc611dff2fa8096ae34eccdcb767e25e6a82d1e9730b61",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.host_events.csv",
+      "bytes": 4235,
+      "sha256": "7fd5519d19fb56b9a34f0581c3e286b8c284ceae1c6703c77a5db7d17a89ae9d",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.pair_events.csv",
+      "bytes": 662551,
+      "sha256": "d33f0b869fa75996b631ba10beb532a1e715f716925dce32c9b133d8e53de6be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.signal_events.csv",
+      "bytes": 108064,
+      "sha256": "0dffe16d38c9217077999aafe91adbd9d9298603a8006131cc59d7ce76143399",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.status.csv",
+      "bytes": 300267,
+      "sha256": "2264c37584864adaa107816093b42efa52b817ea1875180c0cb80bd9b65e5f3b",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/run.json",
+      "bytes": 219209,
+      "sha256": "8ca4209628acbe0b4d030b0013bdf5bc68a31303403b77903ce4f34c1f27234e",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/cpu_unsupported.scores.ready.csv",
+      "bytes": 15894,
+      "sha256": "7316ad215369ae95eff3002fdc5b97091c285137b51ca33520f05bbb141f9abf",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/gpu.batch_cuda_events.csv",
+      "bytes": 312,
+      "sha256": "5950d887654f1b133841bb611d7989f224450a8faed7d514cfb20263dfa85510",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/gpu.cpu_events.csv",
+      "bytes": 376575,
+      "sha256": "2e3e4515005731533604d448e026d24bbe76febd507cd7a2fdd84a683bebe0a4",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/gpu.gc_events.csv",
+      "bytes": 35927,
+      "sha256": "c93c0b71b2dcc56b46d7db6c20d2d306debe296f75ed8b81f775fb8829a9a1d8",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/gpu.host_events.csv",
+      "bytes": 4232,
+      "sha256": "80af2494d04ab5e9b7df40afea21446bf0bb024458f9e18c7280e0eea5bfcf55",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/gpu.pair_events.csv",
+      "bytes": 662316,
+      "sha256": "acbcd9e13fc4ac723984619289ebf1fa7037605febfb4599eb35c9e914ebb088",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/gpu.signal_events.csv",
+      "bytes": 108064,
+      "sha256": "2992db1095d0afede99b2987acce4bcfcbbe927fbe29809d6d24f0737b64916e",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/gpu.status.csv",
+      "bytes": 300299,
+      "sha256": "fc1c333fa44645b6cb477e2d3c24c02f8f2065ef3df80664a2bc89adf882eb50",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/run.json",
+      "bytes": 217197,
+      "sha256": "e358ced98f8e7ede214e1c3aebf712425bb32575efe0faddd5044e1785253751",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g0c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g0c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g0c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g0c20w32/gpu.scores.cigar",
+      "bytes": 22044107,
+      "sha256": "f40c42cec5ab88d0f31600ee14e16ae295b0c262ba0f5a511c9cd87887891888",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g0c20w32/gpu.status.csv",
+      "bytes": 300253,
+      "sha256": "23728a5299ecc194c0e4c5708f355f3cc3c2959f6bc5a98d3419d0f123f04552",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g0c20w32/gpu.stderr",
+      "bytes": 1303,
+      "sha256": "bea4d4313c5273b0553b21f025f4c0501aa5688ee78d10870edaf7248fb01640",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g0c20w32/run.json",
+      "bytes": 218006,
+      "sha256": "0e85b7a59f0e72322a34f7e70ac9925b9035a63fc71f29682f1adb01bea048f9",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g1c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g1c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g1c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g1c20w32/gpu.scores.cigar",
+      "bytes": 22047142,
+      "sha256": "01ebdf09dd8f222ddb9f324e1429af35ee6c8183ba7b328c2862269455b9d2c1",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g1c20w32/gpu.status.csv",
+      "bytes": 300295,
+      "sha256": "f7df71f3fa6f0bc49e693e747dbbe2f49b26652c2a41f77e01a28f040b38cdc8",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g1c20w32/gpu.stderr",
+      "bytes": 1302,
+      "sha256": "3560d28d6daf3b379ab73ee833e66617f01d181c654e4a843e110fde3fc5d120",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g1c20w32/run.json",
+      "bytes": 215995,
+      "sha256": "d7e8614a0928304bbd9275479151f7cbdbe9ab80f2bc0edf9f2e3d2de2cd48e2",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g0c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g0c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g0c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g0c20w32/gpu.scores.cigar",
+      "bytes": 22044107,
+      "sha256": "f40c42cec5ab88d0f31600ee14e16ae295b0c262ba0f5a511c9cd87887891888",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g0c20w32/gpu.status.csv",
+      "bytes": 300246,
+      "sha256": "e7a8e1cf2caba3d025b64d5938a5b4c220bbd279e14f2abd31d27eed65790fff",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g0c20w32/gpu.stderr",
+      "bytes": 1305,
+      "sha256": "a59e474dbcf8eb2a22586804f78711c22bcb8f4829ef5214ad92b8e70ae77699",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g0c20w32/run.json",
+      "bytes": 218007,
+      "sha256": "564b5043e61e29809bcb798fd3095bb3fc4120fb7530cc3ef030edc5b247e95b",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g1c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g1c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g1c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g1c20w32/gpu.scores.cigar",
+      "bytes": 22047142,
+      "sha256": "01ebdf09dd8f222ddb9f324e1429af35ee6c8183ba7b328c2862269455b9d2c1",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g1c20w32/gpu.status.csv",
+      "bytes": 300283,
+      "sha256": "9f9b6cf0d975db4a6ac1b69fa3dff4b9344cd429a54a90ac175e870012757fad",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g1c20w32/gpu.stderr",
+      "bytes": 1302,
+      "sha256": "8f3bdb967ba5daea0d9dc36637ff70e013a0ac18719be725a829e6b6fe77fc01",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g1c20w32/run.json",
+      "bytes": 215995,
+      "sha256": "df1f7f392aad94a9a3096df1f81e5d24d571711b717bad3ae33456edd7b4e02e",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c10w34/run.json",
+      "bytes": 225063,
+      "sha256": "3a07945311a9fc299ac072a35752ad18d667b73e1610697806c42383d282fdb1",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c20w32/gpu.scores.cigar",
+      "bytes": 22044107,
+      "sha256": "f40c42cec5ab88d0f31600ee14e16ae295b0c262ba0f5a511c9cd87887891888",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c20w32/gpu.status.csv",
+      "bytes": 300255,
+      "sha256": "eb1e3c837fafa497dbacc71e9c1f500fb174c9b01ebf14f21c68d6733d3e133c",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c20w32/gpu.stderr",
+      "bytes": 1304,
+      "sha256": "4d5806c2e696429e46bc172e6f2a2714738cd0963f4bf9df5b2198ac6c6c91de",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c20w32/run.json",
+      "bytes": 218003,
+      "sha256": "dd87b2b67715cea3ca2dc1d86ad684e090aef86090ef24b29b192f2a61065913",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c10w34/run.json",
+      "bytes": 215992,
+      "sha256": "eb5ebf800d4a305275f875c4cf701359022781f1b4047bfcbd8f9a31ba5adce0",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c20w32/gpu.scores.cigar",
+      "bytes": 22047142,
+      "sha256": "01ebdf09dd8f222ddb9f324e1429af35ee6c8183ba7b328c2862269455b9d2c1",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c20w32/gpu.status.csv",
+      "bytes": 300323,
+      "sha256": "9765b669a2d881ebe7a57982a97e4f90f2de7b9ca72540e3475915d7f4e53221",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c20w32/gpu.stderr",
+      "bytes": 1302,
+      "sha256": "8b22643d6da34b2d1711f792444a1b332ec9b3e02f858bc9f03b8e6e16f4d538",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c20w32/run.json",
+      "bytes": 215994,
+      "sha256": "59a82939456ff54464c225c872fb033e9714931bd923bdfef383af661029bcc7",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_gce8192/run.json",
+      "bytes": 222511,
+      "sha256": "6cf6344c4888f471be47919dd3833d0121a855004c6a600a889aa3e9936a0d9f",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_guardede8192/run.json",
+      "bytes": 222595,
+      "sha256": "31eb29a3c65e01d0cc1a02c29c2369fc0417f6839a477bffbe6023f97c790bff",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c10w34/run.json",
+      "bytes": 225062,
+      "sha256": "d12c1396a2999787143edc4b43b4999e5207c21a22b446ac9e5bca6d0ca6754d",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c20w32/gpu.scores.cigar",
+      "bytes": 22044107,
+      "sha256": "f40c42cec5ab88d0f31600ee14e16ae295b0c262ba0f5a511c9cd87887891888",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c20w32/gpu.status.csv",
+      "bytes": 300249,
+      "sha256": "12aa5a2e48729eaa4d4059a22e98b22eb57ee58bb920dc25f7425d818b7031cb",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c20w32/gpu.stderr",
+      "bytes": 1304,
+      "sha256": "06fc27b2f5a8e60892cb048b5c7c05d241476a936bf3bac9088d8fce29e669c1",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c20w32/run.json",
+      "bytes": 218005,
+      "sha256": "ad6988e0a2a8766622a45b3e7b58c90e4981b0c428c7739b2e53d5514cff6c2c",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c10w34/run.json",
+      "bytes": 215995,
+      "sha256": "00cc02d4a1a56840c0573b784f9d0f5cbfe585105ec6e926604901081872b9fc",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c20w32/gpu.scores.cigar",
+      "bytes": 22047142,
+      "sha256": "01ebdf09dd8f222ddb9f324e1429af35ee6c8183ba7b328c2862269455b9d2c1",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c20w32/gpu.status.csv",
+      "bytes": 300300,
+      "sha256": "f0cef4ec88295f507607c266404a721d73d5543c6014c7a65b88c9e5246ee1d0",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c20w32/gpu.stderr",
+      "bytes": 1303,
+      "sha256": "ad239a627d496244902625b2f9473c4fc734520c91417ece94812f45d01313a1",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c20w32/run.json",
+      "bytes": 215994,
+      "sha256": "9654b54ecfd7cd3e4f34c775ae913c346b396598be82decf543115ee8830d0ab",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_gce8192/run.json",
+      "bytes": 222513,
+      "sha256": "5552e322507f172d4a0c9edf26bae75870daa883248ca979f9aeac57292eac16",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_guardede8192/run.json",
+      "bytes": 222598,
+      "sha256": "7e185275d412b2029e7bcb8cf31116846bfc78246c0310d493eeaf3318d5eb80",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c10w34/run.json",
+      "bytes": 225063,
+      "sha256": "7162713ef2cae9e36f82181bcef044d1c1f9b41c53aadbad13feeb5211270bd2",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c20w32/gpu.scores.cigar",
+      "bytes": 22044107,
+      "sha256": "f40c42cec5ab88d0f31600ee14e16ae295b0c262ba0f5a511c9cd87887891888",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c20w32/gpu.status.csv",
+      "bytes": 300282,
+      "sha256": "4451c5f818870042aa7e71e968b34d5d1346b1ee2bf3e11d5efd45074989ac54",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c20w32/gpu.stderr",
+      "bytes": 1303,
+      "sha256": "2742686c8ad7dbdcb4a727c9bb8cf6131478bc4494c26d76dc3a2d65203bf92a",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c20w32/run.json",
+      "bytes": 218007,
+      "sha256": "007d5d3de03725d7ac9805654b8031c701d0b36c4368534959a341771d1f904e",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c10w34/run.json",
+      "bytes": 215992,
+      "sha256": "c324a6358bfc619deb77b970b3fee11955cce1cd4fbd4197c1ac66e3162c1c2f",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c20w32/cpu_unsupported.scores",
+      "bytes": 4963,
+      "sha256": "e14114c13da31841ac5bd2e97bdce59edaa3352fb9232f4a30eaf17cef64e501",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c20w32/cpu_unsupported.scores.cigar",
+      "bytes": 10222600,
+      "sha256": "44948339d02fdc3af9c0f70455d53ac3e4a70f5e56706aa147da387efb6cf7be",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c20w32/gpu.scores",
+      "bytes": 41827,
+      "sha256": "e334272b4f0b5b637de13c6ce1d1b89153032d4bb5deabf55862251c17296b33",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c20w32/gpu.scores.cigar",
+      "bytes": 22047142,
+      "sha256": "01ebdf09dd8f222ddb9f324e1429af35ee6c8183ba7b328c2862269455b9d2c1",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c20w32/gpu.status.csv",
+      "bytes": 300340,
+      "sha256": "98840af856ec6e6afabf9dd68c57bc5293359bc6677591a8b6905a0a1a622dc6",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c20w32/gpu.stderr",
+      "bytes": 1302,
+      "sha256": "0f2ea8703207f448ebdc3c4a21e45b9e2c879b95e9bd3ba500e4d2dec098a794",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c20w32/run.json",
+      "bytes": 215994,
+      "sha256": "f03318c1d893abed3310f1346314956b892de9e33efa2036811be7bf32b7a055",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_gce8192/run.json",
+      "bytes": 222513,
+      "sha256": "15cd54ecd06e49d2b5270633f725f5c96f7037a95cc0942ae3699119c4462256",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_guardede8192/run.json",
+      "bytes": 222598,
+      "sha256": "ee71b5f307a816cf49ce9d6d46de9a3dfd98e97e330f31329d84b61cd9c4e5c3",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_corrected.tar.gz",
+      "bytes": 1108320,
+      "sha256": "6519a817e52d72e74938937b7397ad653b319dde5652843a2c311e9d644e232f",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_diagnostic.tar.gz",
+      "bytes": 1117436,
+      "sha256": "ac3f40c5758387d0baf40dcfaafc7968477e392676d49c6a747758bcfdcfc868",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/bin/allocation_control.so",
+      "bytes": 68536,
+      "sha256": "fe59f454f00709c2125c73a50aae8f3e99758331d14ce6d36e059be4ca799301",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/bin/bench_cpu_current",
+      "bytes": 948392,
+      "sha256": "33c6e690650337b572ec91864857d428e9e3bb751795efd789dae1b1de5059da",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/bin/bench_wfagpu_gc",
+      "bytes": 956600,
+      "sha256": "a6d8abff5fd45f7d5d1749c144fec9169a2898e8c3b1e6172a2681e3fc2c67ff",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/bin/fallback_observer.so",
+      "bytes": 63328,
+      "sha256": "d7756c63502b41b26119a0f2015ad6acf89a2435f290e8f9946a793fadd5e58d",
+      "initial_original_manifest_check": "MATCH"
+    },
+    {
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/lib/gc/libwfagpu.so",
+      "bytes": 619216,
+      "sha256": "af4a79c95b39377b026adfc9d2cd32dd1a8c029bc95c289edcede009220ba634",
+      "initial_original_manifest_check": "MATCH"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "run_id": "diag_g0c20w32",
+    "gc_mode": 0,
+    "completion_s": 29.449598207999998,
+    "routed_last_ready_s": 17.625371136,
+    "last_rescue_ready_s": 22.322278475,
+    "all_RLE_ready_s": 29.332940662,
+    "origin_bracket_ns": 1324,
+    "gc_events": 0,
+    "signal_events": 1945,
+    "reserved_bytes": 5815944011,
+    "cap_bytes": 7247757312
+  },
+  {
+    "run_id": "diag_g1c20w32",
+    "gc_mode": 1,
+    "completion_s": 25.695157221999807,
+    "routed_last_ready_s": 16.36685958,
+    "last_rescue_ready_s": null,
+    "all_RLE_ready_s": 25.549588685,
+    "origin_bracket_ns": 888,
+    "gc_events": 277,
+    "signal_events": 1945,
+    "reserved_bytes": 5815944011,
+    "cap_bytes": 7247757312
+  }
+]

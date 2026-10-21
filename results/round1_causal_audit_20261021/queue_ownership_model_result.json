@@ -1,0 +1,76 @@
+{
+  "status": "BOUNDED_MODEL_PASS_WITH_EXPECTED_MUTANT_COUNTEREXAMPLE",
+  "correct_models": [
+    {
+      "status": "PASS",
+      "batches": 3,
+      "slots": 1,
+      "states_explored": 31,
+      "transitions": 42,
+      "terminal_states": 1,
+      "unfinished_deadlocks": [],
+      "snapshot_blocked_states": 6,
+      "maximum_owned_slots": 1,
+      "maximum_queued_batches": 1
+    },
+    {
+      "status": "PASS",
+      "batches": 4,
+      "slots": 2,
+      "states_explored": 64,
+      "transitions": 102,
+      "terminal_states": 1,
+      "unfinished_deadlocks": [],
+      "snapshot_blocked_states": 6,
+      "maximum_owned_slots": 2,
+      "maximum_queued_batches": 2
+    },
+    {
+      "status": "PASS",
+      "batches": 6,
+      "slots": 4,
+      "states_explored": 157,
+      "transitions": 276,
+      "terminal_states": 1,
+      "unfinished_deadlocks": [],
+      "snapshot_blocked_states": 6,
+      "maximum_owned_slots": 4,
+      "maximum_queued_batches": 4
+    }
+  ],
+  "unsafe_early_release": {
+    "status": "COUNTEREXAMPLE",
+    "reason": "payload overwritten while normal RLE still reads it",
+    "batches": 3,
+    "slots": 1,
+    "states_explored": 16,
+    "history": [
+      "launch GPU batch 0",
+      "GPU batch 0 completed",
+      "snapshot batch 0 into slot 0",
+      "launch GPU batch 1",
+      "GPU batch 1 completed",
+      "start rescue batch 0 from slot 0",
+      "rescue batch 0 done; UNSAFE slot release",
+      "snapshot batch 1 into slot 0",
+      "RLE batch 0 reads slot 0, now containing batch 1"
+    ]
+  },
+  "scope": "Abstract serial GPU, cyclic host slots, one FIFO batch service, rescue then normal RLE; no real data, timings, CUDA calls or native worker execution.",
+  "properties": [
+    "no overwrite before last reader finishes",
+    "bounded host slot ownership",
+    "exactly-once output readiness",
+    "all finite modeled interleavings drain without unfinished deadlock"
+  ],
+  "unproved": [
+    "CUDA/CPU memory-model ordering",
+    "real pointer aliasing and metadata lifetimes",
+    "allocation failures",
+    "thread cancellation",
+    "arbitrary penalties",
+    "optimal alignment",
+    "native race freedom",
+    "performance"
+  ]
+}

@@ -1,0 +1,11 @@
+round,run_id,gc_mode,completion_s,reserved_bytes,cap_bytes,capacity_rescues,unsupported_cpu_pairs,batch_0_rescues,batch_1_rescues,unfinished_or_execution_limit_reason_1,post_GC_headroom_capacity_reason_3,archive_source_id_to_resolve
+0,main_r0_g0c20w32,0,28.12126841700001,5739913483,5905580032,118,888,108,10,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g0c20w32/run.json
+0,main_r0_g1c20w32,1,24.32003471099995,5739913483,5905580032,0,888,0,0,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r0_g1c20w32/run.json
+1,main_r1_g0c20w32,0,27.460030802999995,5739913483,5905580032,118,888,108,10,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g0c20w32/run.json
+1,main_r1_g1c20w32,1,24.211557682000148,5739913483,5905580032,0,888,0,0,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r1_g1c20w32/run.json
+2,main_r2_g0c20w32,0,27.701138650000075,5739913483,5905580032,118,888,108,10,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g0c20w32/run.json
+2,main_r2_g1c20w32,1,23.790323655999828,5739913483,5905580032,0,888,0,0,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/main_r2_g1c20w32/run.json
+3,late_r3_g0c20w32,0,28.136225793999984,5739913483,5905580032,118,888,108,10,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g0c20w32/run.json
+3,late_r3_g1c20w32,1,24.850094508999973,5739913483,5905580032,0,888,0,0,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r3_g1c20w32/run.json
+4,late_r4_g0c20w32,0,28.676038925000057,5739913483,5905580032,118,888,108,10,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g0c20w32/run.json
+4,late_r4_g1c20w32,1,24.399819333000096,5739913483,5905580032,0,888,0,0,0,0,WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/late_r4_g1c20w32/run.json

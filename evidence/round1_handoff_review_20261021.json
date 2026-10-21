@@ -1,0 +1,39 @@
+{
+  "status": "LOCAL_WORKING_CHECKOUT_ADOPTED_FOR_NEXT_STEPS",
+  "seed_HEAD_verified": "bb0a83a766d65a237dd16aab87a63ab706b4a858",
+  "dedicated_repository": "https://github.com/cudabinary/wfa-traceback-research",
+  "tracked_seed_files_verified_against_HEAD": 43,
+  "initial_curated_manifest_entries_verified": 40,
+  "old_shared_audit_preserved": true,
+  "old_shared_audit_manifest_sha256": "369c7c2b61a62ff4a1c6ce0fe82ff512334f284ac6cce2733e0a1c477eca3afe",
+  "first_round_report_bytes": 9890,
+  "first_round_report_sha256": "ee6be839dd1d1b605b22ca1af91455b2c457fe69872ac0981885fe3ab6a4ac02",
+  "first_round_audit_files_verified": 59,
+  "first_round_ZIP": "ABSENT_NO_ZIP_CREATED",
+  "curated_completed_round": "results/round1_causal_audit_20261021",
+  "protected_restore_matches": 1,
+  "protected_restore_missing_required_inputs": 111,
+  "full_raw_restore_verified": false,
+  "scientific_status": "Numerical and finite-model evidence only; no new native performance/race-freedom/novelty result",
+  "next_step": "Specify the actual host buffer ownership change and exact slot byte formula using preserved source; maintain CPU-only scope",
+  "remaining_blocks": [
+    "111 first-round raw dependencies absent from the supplied protected tree",
+    "Full raw replay requires exact source identities and controlled recovery",
+    "Any future transfer requires one-time merged counters and bounded account costs; no transfer was attempted",
+    "GPU work remains outside this stage and another campaign was reported active"
+  ],
+  "operations_performed": [
+    "Read-only checkout and historical comparison",
+    "Local English curation of completed evidence",
+    "Hash verification of supplied protected inputs"
+  ],
+  "operations_not_performed": [
+    "GPU measurement",
+    "Compilation",
+    "Archive upload/download",
+    "Git push",
+    "Release or tag",
+    "Original source modification or deletion",
+    "Message to MAIN"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "status": "DESIGN_WITH_BOUNDED_CPU_MODEL_CHECKED_NOT_COMPILED_NOT_NATIVE_RUN",
+  "version": 1,
+  "question": "Does GC still improve whole-request completion when prior-batch rescue/RLE no longer gates subsequent GPU submissions under bounded resources?",
+  "factors": {
+    "GC": [
+      "OFF",
+      "ON"
+    ],
+    "host_pipeline": [
+      "GATED",
+      "QUEUED"
+    ]
+  },
+  "arms": {
+    "A": [
+      "OFF",
+      "GATED"
+    ],
+    "B": [
+      "ON",
+      "GATED"
+    ],
+    "C": [
+      "OFF",
+      "QUEUED"
+    ],
+    "D": [
+      "ON",
+      "QUEUED"
+    ]
+  },
+  "common": {
+    "input": {
+      "dataset": "original ONT 50k file, 10000 original pairings",
+      "sha256": "b66ef7ecede7cbd6c1843b2e9268c264f68b6af30307cdb6f2114e2620ff2c45",
+      "gpu_partition_sha256": "665b2a3de1ab7bfb9950f3bda2071741ee0d30f4bcc31c66121f17f7c7a394ed",
+      "unsupported_partition_sha256": "112836a49a2df7ab3aaa668803144963f0ceedb05ac0402e0dc942f8fcea656d",
+      "GPU_eligible": 9112,
+      "unsupported_CPU": 888,
+      "order": "decreasing max length, original pair ID tie break",
+      "holdout": false
+    },
+    "contract": {
+      "global": true,
+      "mismatch": 2,
+      "gap_open": 3,
+      "gap_extend": 1,
+      "heuristics": false,
+      "full_RLE_CIGAR": true,
+      "tied_optimal_strings_allowed": true
+    },
+    "GPU": {
+      "E": 16384,
+      "C_records": 20971520,
+      "workers": 32,
+      "threads_per_block": 256,
+      "batch": 512,
+      "reservation_cap_bytes": 5905580032,
+      "baseline_primary_reservation_bytes": 5739913483,
+      "same_GC_scratch_OFF_ON": true,
+      "separate_full_arena_for_queue": false
+    },
+    "host": {
+      "logical_CPU_capacity": 20,
+      "unsupported_threads": 16,
+      "rescue_RLE_OpenMP_threads": 4,
+      "queue_consumer_coordinators": 1,
+      "submission_coordinators": 1,
+      "same_service_thread_topology_in_all_arms": true,
+      "thread_accounting": "20 compute threads plus control threads share the same 20-logical-CPU cpuset; no extra core is granted to QUEUED. Record all runnable threads and affinity. Control threads also consume time.",
+      "rescue_schedule_for_core_2x2": "same schedule(static) within each batch; batches consumed FIFO, one batch service at a time",
+      "aligner_object_lifetime": "same existing helper behavior in all four arms; no free persistent-aligner benefit assigned only to QUEUED",
+      "host_slots": 4,
+      "host_slot_payload": "one batch alignment_result_t array and its full offloaded traceback, owned until rescue and normal RLE finish",
+      "host_slot_policy": "All four arms allocate identical four-slot host storage. GATED waits on each prior-batch completion; QUEUED waits only on required slot availability and final drain. No unbounded backlog.",
+      "host_memory": "Freeze exact integer bytes before native execution from ABI and input sizes; include slot metadata, pinned bytes, RSS/peak and process limits. No claim of equal total memory to historical R2.",
+      "output": "write by original pair ID with exactly-once readiness; final join, full output close, and child exit inside completion timer"
+    },
+    "implementation_identity": "One common candidate binary with runtime switches for GC and host mode; unchanged alignment/collector kernel source and flags. Log source/library/kernel hashes and compiled registers. Re-run all four cells; do not reuse historical A/B timings as new cells.",
+    "timer": "Same R2 whole-request scope including read/sort/partition, child/context startup, allocation, all CPU/GPU computation, queue copies/backpressure/drain, synchronization, output close and exit. Post-hoc validation/hash outside. No sum of pair minima."
+  },
+  "correctness_gates_before_performance": [
+    "CPU-only ownership/scheduling model: delayed consumer, full queue/backpressure, shutdown while full, output ordering, exactly-once completion and immutable snapshot lifetimes; a model is not CUDA race certification.",
+    "After an authorized native build: independent small affine DP, real collection pressure, multiple batches and slots wrapping, mixed GPU completion/capacity rescue, late final rescue and empty final queue.",
+    "Every run must pass optimal-score and full-CIGAR checks; collector/chain failure, missing output or untracked resource excess disqualifies it. Never count failed elapsed time as throughput."
+  ],
+  "diagnostic_event_requirements": [
+    "Host CLOCK_MONOTONIC: batch submit, D2H enqueue/complete/visible, snapshot begin/end, queue enqueue/dequeue/start/end, slot acquire/release and blocked-wait begin/end, rescue and normal RLE per pair, final drain/output close/child exit.",
+    "Device timestamps and CUDA correlation/events: alignment start/end, relevant copy/pack intervals and status export; bridge clocks only using an explicit supported correlation record.",
+    "Queue high-water, blocked time, allocated bytes and all live buffer owners. Failure reason/ID and input order. GC call/closure trace only in separate diagnostics."
+  ],
+  "minimal_native_campaign_after_authorization": {
+    "qualification_diagnostics": "one complete exact diagnostic job per arm after correctness gates (4); new traces are separate from performance",
+    "primary_performance": "4 Williams-balanced blocks, one fresh process per arm per block (16 full requests), at least two temporal sessions; no profiling/detailed trace",
+    "block_orders": [
+      "A B D C",
+      "B C A D",
+      "C D B A",
+      "D A C B"
+    ],
+    "inference_scope": "n=4 per arm is a bounded repeatability check; report every block and session, no broad significance/generalization claim",
+    "GPU_concurrency": "single exclusive RTX 4060 Ti campaign; inspect shared execution lock, actual bench/compiler/profiler processes and other work before launch. Never overlap with MAIN/RCC/SCOUT or other GPU jobs.",
+    "first_step_GPU_executed": false
+  },
+  "estimands": {
+    "GC_effect_GATED": "T_A - T_B per balanced block",
+    "GC_effect_QUEUED": "T_C - T_D per block",
+    "pipeline_effect_noGC": "T_A - T_C per block",
+    "pipeline_effect_GC": "T_B - T_D per block",
+    "interaction": "(T_A - T_B) - (T_C - T_D); a factorial interaction, not an additive decomposition into pure collector and pure rescue instruction times",
+    "rescue_and_feasibility": "arena failure count/IDs and GPU-completed set remain separate from whole-request completion"
+  },
+  "strong_simple_alternative": {
+    "reason": "Observed rescue work is imbalanced across static OpenMP assignments.",
+    "followup_if_residual_GC_claim_is_pursued": "Before a broad superiority claim, compare GC OFF/ON with dynamic(1) rescue scheduling in the selected bounded pipeline using the same four compute threads and resources. Change both GC arms equally; freeze before measurement. This is a separate 2-arm qualification, not silently mixed into the core 2x2."
+  },
+  "decision_rules": [
+    "If C closes the whole-request gap to D within repeat/session variation, the historical 13.5% is not evidence of a pipeline-independent GC speed advantage; preserve the capacity/rescue observation.",
+    "If D consistently beats C under identical bounded resources and exactness, GC retains conditional end-to-end value after queue decoupling; still do not call it pure GC instruction speedup.",
+    "If QUEUED cannot progress because safe slots/backpressure dominate or resource usage rises materially, report that cost and keep the bounded GATED comparison.",
+    "Do not implement a shared GPU pool unless same-clock failure/root-closure/donor-space evidence and a genuine difference from generic allocation are established."
+  ],
+  "remaining_pre_native_freeze": [
+    "implementation/source hashes",
+    "exact host-slot ABI byte formula and budgets",
+    "machine cpuset and process limits",
+    "native correctness outcomes",
+    "exclusive GPU scheduling authorization"
+  ],
+  "authorization": "This audit authorizes no GPU/build/install/remote/paid/upload/submission action. Those are future gates, not actions taken.",
+  "CPU_abstract_ownership_model": {
+    "result": "QUEUE_OWNERSHIP_MODEL.json",
+    "states_explored": 252,
+    "status": "BOUNDED_MODEL_PASS_WITH_EXPECTED_MUTANT_COUNTEREXAMPLE",
+    "scope": "No real pointers, memory-model proof, CUDA execution or performance"
+  },
+  "raw_replay_access": "Original raw files were verified during the first audit and became unavailable before final rerun. Restore to a separate permitted copy and verify hashes before future replay. No restore/download performed."
+}

@@ -1,0 +1,21 @@
+{
+  "GPU_runs_in_this_stage": 0,
+  "compilations_in_this_stage": 0,
+  "live_device_occupancy": "UNKNOWN_NOT_QUERIED",
+  "concurrent_GPU_jobs_started_by_this_audit": 0,
+  "future_minimum": {
+    "device": "one RTX 4060 Ti, exclusive window",
+    "diagnostic_requests": 4,
+    "primary_requests": 16,
+    "additional_correctness": "required before measurements, not yet sized",
+    "historical_time_context": "24-30s per job gives roughly 8-10 minutes of clocks for 20 jobs only; not an ETA or approved budget. Build, correctness and diagnostic overhead are additional."
+  },
+  "before_launch": [
+    "explicit build/GPU authorization",
+    "recover/verify required evidence in a separate copy",
+    "inspect execution lock and actual WSL/CUDA benchmark/compiler/profiler processes",
+    "coordinate a window without other GPU campaigns",
+    "freeze ABI bytes, CPU capacity, hashes and fresh IDs"
+  ],
+  "current_independent_work": "CPU model and retained evidence calculations completed"
+}

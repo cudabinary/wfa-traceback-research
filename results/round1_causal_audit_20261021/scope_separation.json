@@ -1,0 +1,446 @@
+{
+  "R2_cases": [
+    {
+      "choice": "g0c20w32",
+      "runs": [
+        {
+          "run_id": "main_r0_g0c20w32",
+          "completion_s": 28.12126841700001,
+          "reason_counts": {
+            "0": 8994,
+            "1": 0,
+            "2": 118,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5739913483,
+          "cfg": [
+            "gc",
+            16384,
+            32,
+            512,
+            20971520,
+            0
+          ]
+        },
+        {
+          "run_id": "main_r1_g0c20w32",
+          "completion_s": 27.460030802999995,
+          "reason_counts": {
+            "0": 8994,
+            "1": 0,
+            "2": 118,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5739913483,
+          "cfg": [
+            "gc",
+            16384,
+            32,
+            512,
+            20971520,
+            0
+          ]
+        },
+        {
+          "run_id": "main_r2_g0c20w32",
+          "completion_s": 27.701138650000075,
+          "reason_counts": {
+            "0": 8994,
+            "1": 0,
+            "2": 118,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5739913483,
+          "cfg": [
+            "gc",
+            16384,
+            32,
+            512,
+            20971520,
+            0
+          ]
+        }
+      ],
+      "pool_with_primary_C20_E16384": true
+    },
+    {
+      "choice": "g1c20w32",
+      "runs": [
+        {
+          "run_id": "main_r0_g1c20w32",
+          "completion_s": 24.32003471099995,
+          "reason_counts": {
+            "0": 9112,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5739913483,
+          "cfg": [
+            "gc",
+            16384,
+            32,
+            512,
+            20971520,
+            1
+          ]
+        },
+        {
+          "run_id": "main_r1_g1c20w32",
+          "completion_s": 24.211557682000148,
+          "reason_counts": {
+            "0": 9112,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5739913483,
+          "cfg": [
+            "gc",
+            16384,
+            32,
+            512,
+            20971520,
+            1
+          ]
+        },
+        {
+          "run_id": "main_r2_g1c20w32",
+          "completion_s": 23.790323655999828,
+          "reason_counts": {
+            "0": 9112,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5739913483,
+          "cfg": [
+            "gc",
+            16384,
+            32,
+            512,
+            20971520,
+            1
+          ]
+        }
+      ],
+      "pool_with_primary_C20_E16384": true
+    },
+    {
+      "choice": "g0c10w34",
+      "runs": [
+        {
+          "run_id": "main_r0_g0c10w34",
+          "completion_s": 31.292134472000043,
+          "reason_counts": {
+            "0": 8579,
+            "1": 0,
+            "2": 533,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 3154518763,
+          "cfg": [
+            "gc",
+            16384,
+            34,
+            512,
+            10485760,
+            0
+          ]
+        },
+        {
+          "run_id": "main_r1_g0c10w34",
+          "completion_s": 31.655051894000053,
+          "reason_counts": {
+            "0": 8579,
+            "1": 0,
+            "2": 533,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 3154518763,
+          "cfg": [
+            "gc",
+            16384,
+            34,
+            512,
+            10485760,
+            0
+          ]
+        },
+        {
+          "run_id": "main_r2_g0c10w34",
+          "completion_s": 31.897027581999964,
+          "reason_counts": {
+            "0": 8579,
+            "1": 0,
+            "2": 533,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 3154518763,
+          "cfg": [
+            "gc",
+            16384,
+            34,
+            512,
+            10485760,
+            0
+          ]
+        }
+      ],
+      "pool_with_primary_C20_E16384": false
+    },
+    {
+      "choice": "g1c10w34",
+      "runs": [
+        {
+          "run_id": "main_r0_g1c10w34",
+          "completion_s": 26.797316596999963,
+          "reason_counts": {
+            "0": 9112,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 3154518763,
+          "cfg": [
+            "gc",
+            16384,
+            34,
+            512,
+            10485760,
+            1
+          ]
+        },
+        {
+          "run_id": "main_r1_g1c10w34",
+          "completion_s": 26.166043088999913,
+          "reason_counts": {
+            "0": 9112,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 3154518763,
+          "cfg": [
+            "gc",
+            16384,
+            34,
+            512,
+            10485760,
+            1
+          ]
+        },
+        {
+          "run_id": "main_r2_g1c10w34",
+          "completion_s": 27.00685339200004,
+          "reason_counts": {
+            "0": 9112,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 3154518763,
+          "cfg": [
+            "gc",
+            16384,
+            34,
+            512,
+            10485760,
+            1
+          ]
+        }
+      ],
+      "pool_with_primary_C20_E16384": false
+    },
+    {
+      "choice": "gce8192",
+      "runs": [
+        {
+          "run_id": "main_r0_gce8192",
+          "completion_s": 31.724527912999974,
+          "reason_counts": {
+            "0": 8728,
+            "1": 384,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5677076619,
+          "cfg": [
+            "gc",
+            8192,
+            40,
+            512,
+            20971520,
+            1
+          ]
+        },
+        {
+          "run_id": "main_r1_gce8192",
+          "completion_s": 30.012439767999922,
+          "reason_counts": {
+            "0": 8728,
+            "1": 384,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5677076619,
+          "cfg": [
+            "gc",
+            8192,
+            40,
+            512,
+            20971520,
+            1
+          ]
+        },
+        {
+          "run_id": "main_r2_gce8192",
+          "completion_s": 32.33134416600001,
+          "reason_counts": {
+            "0": 8728,
+            "1": 384,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5677076619,
+          "cfg": [
+            "gc",
+            8192,
+            40,
+            512,
+            20971520,
+            1
+          ]
+        }
+      ],
+      "pool_with_primary_C20_E16384": false
+    },
+    {
+      "choice": "guardede8192",
+      "runs": [
+        {
+          "run_id": "main_r0_guardede8192",
+          "completion_s": 30.69068152400007,
+          "reason_counts": {
+            "0": 8728,
+            "1": 384,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5509294219,
+          "cfg": [
+            "guarded",
+            8192,
+            40,
+            512,
+            20971520,
+            0
+          ]
+        },
+        {
+          "run_id": "main_r1_guardede8192",
+          "completion_s": 32.401837245000024,
+          "reason_counts": {
+            "0": 8728,
+            "1": 384,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5509294219,
+          "cfg": [
+            "guarded",
+            8192,
+            40,
+            512,
+            20971520,
+            0
+          ]
+        },
+        {
+          "run_id": "main_r2_guardede8192",
+          "completion_s": 32.33304615099996,
+          "reason_counts": {
+            "0": 8728,
+            "1": 384,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "reserved_bytes": 5509294219,
+          "cfg": [
+            "guarded",
+            8192,
+            40,
+            512,
+            20971520,
+            0
+          ]
+        }
+      ],
+      "pool_with_primary_C20_E16384": false
+    }
+  ],
+  "other_branches": "C2/C3, 2 GiB budget-filled experiments, CLR/CCS/short ONT and historical 12.7% binaries are not pooled. Zero arena failures under an execution-stage limit do not refute the 118 arena failures in the corrected R2 C20/E16384 comparison.",
+  "interpretation": "Reason code labels must be taken from the matching source. Primary R2 has only codes 0 and 2; arena failures are not native cudaMalloc OOM.",
+  "matching_corrected_kernel_reason_map": {
+    "0": "GPU completed",
+    "1": "unfinished without another stop reason, including execution-bound exhaustion",
+    "2": "append cursor exceeded arena guard",
+    "3": "post-GC retained cursor plus headroom does not fit",
+    "4": "collector failure",
+    "5": "final traceback chain error"
+  }
+}

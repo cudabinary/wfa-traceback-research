@@ -1,0 +1,209 @@
+{
+  "anchors": [
+    {
+      "variant": "corrected",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_corrected.tar.gz",
+      "member": "WFA-GPU/lib/align.cu",
+      "member_sha256": "0f3b7bc4dd56ccddd2c73160ec25a859b4492df479baf42f98fbfa4ac18fdea5",
+      "anchors": [
+        {
+          "line": 259,
+          "text": "cudaStreamSynchronize(stream2);"
+        },
+        {
+          "line": 284,
+          "text": "int alignments_computed_cpu = compute_alignments_cpu_threaded("
+        },
+        {
+          "line": 376,
+          "text": "copyInResults(results,"
+        },
+        {
+          "line": 431,
+          "text": "cudaStreamSynchronize(stream2);"
+        },
+        {
+          "line": 438,
+          "text": "int alignments_computed_cpu = compute_alignments_cpu_threaded("
+        },
+        {
+          "line": 738,
+          "text": "cudaStreamSynchronize(stream2);"
+        },
+        {
+          "line": 884,
+          "text": "cudaStreamSynchronize(stream2);"
+        }
+      ]
+    },
+    {
+      "variant": "corrected",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_corrected.tar.gz",
+      "member": "WFA-GPU/utils/wfa_cpu.c",
+      "member_sha256": "af3aafa9a3e94a6adbc64b75f17ede2f78f31e992393ccb7ccbb19284a5d1f95",
+      "anchors": [
+        {
+          "line": 56,
+          "text": "#pragma omp for schedule(static)"
+        },
+        {
+          "line": 93,
+          "text": "#pragma omp for schedule(static)"
+        },
+        {
+          "line": 143,
+          "text": "#pragma omp for schedule(static)"
+        }
+      ]
+    },
+    {
+      "variant": "corrected",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_corrected.tar.gz",
+      "member": "WFA-GPU/lib/bt_gc.cuh",
+      "member_sha256": "e9c384d60c1840e89ccbd59e9672cd8fed0f969215315da20f734620a26a1d7d",
+      "anchors": []
+    },
+    {
+      "variant": "corrected",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_corrected.tar.gz",
+      "member": "WFA-GPU/lib/kernels/sequence_alignment_kernel.cu",
+      "member_sha256": "dc9bc1dc8cea43c525ec7acd15e63562819c3b057dd1897539ad9be4aa9f78d9",
+      "anchors": []
+    },
+    {
+      "variant": "corrected",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_corrected.tar.gz",
+      "member": "WFA-GPU/external/WFA2-lib/wavefront/wavefront_backtrace_buffer.c",
+      "member_sha256": "d87978b666f2a696ded394e37e9ee859fdb79ba3592122737dffcbb7e6da37f6",
+      "anchors": [
+        {
+          "line": 358,
+          "text": "void wf_backtrace_buffer_mark_backtrace("
+        },
+        {
+          "line": 376,
+          "text": "void wf_backtrace_buffer_mark_backtrace_batch("
+        },
+        {
+          "line": 457,
+          "text": "bt_block_idx_t wf_backtrace_buffer_compact_marked("
+        }
+      ]
+    },
+    {
+      "variant": "diagnostic",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_diagnostic.tar.gz",
+      "member": "WFA-GPU/lib/align.cu",
+      "member_sha256": "fb665d1527cc1dad840cf306bfd04010dae62c0895032ad70712e0e602d382c7",
+      "anchors": [
+        {
+          "line": 261,
+          "text": "cudaStreamSynchronize(stream2);"
+        },
+        {
+          "line": 286,
+          "text": "wfagpu_exp_event(\"batch_submitted\",batch,from,curr_batch_size,0);"
+        },
+        {
+          "line": 290,
+          "text": "wfagpu_exp_event(\"callback_begin\",batch-1,prev_from,prev_curr_batch_size,num_alignments-min((size_t)(batch+1)*batch_size,num_alignments));"
+        },
+        {
+          "line": 291,
+          "text": "int alignments_computed_cpu = compute_alignments_cpu_threaded("
+        },
+        {
+          "line": 305,
+          "text": "wfagpu_exp_event(\"callback_end\",batch-1,prev_from,prev_curr_batch_size,alignments_computed_cpu);"
+        },
+        {
+          "line": 384,
+          "text": "copyInResults(results,"
+        },
+        {
+          "line": 439,
+          "text": "cudaStreamSynchronize(stream2);"
+        },
+        {
+          "line": 447,
+          "text": "wfagpu_exp_event(\"final_callback_begin\",num_batchs-1,from,curr_batch_size,0);"
+        },
+        {
+          "line": 448,
+          "text": "int alignments_computed_cpu = compute_alignments_cpu_threaded("
+        },
+        {
+          "line": 462,
+          "text": "wfagpu_exp_event(\"final_callback_end\",num_batchs-1,from,curr_batch_size,alignments_computed_cpu);"
+        },
+        {
+          "line": 749,
+          "text": "cudaStreamSynchronize(stream2);"
+        },
+        {
+          "line": 895,
+          "text": "cudaStreamSynchronize(stream2);"
+        }
+      ]
+    },
+    {
+      "variant": "diagnostic",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_diagnostic.tar.gz",
+      "member": "WFA-GPU/utils/wfa_cpu.c",
+      "member_sha256": "01e12062139377e427db08ee91f99034cd7e670dd3720a56ae7d2a030d146964",
+      "anchors": [
+        {
+          "line": 61,
+          "text": "#pragma omp for schedule(static)"
+        },
+        {
+          "line": 100,
+          "text": "#pragma omp for schedule(static)"
+        },
+        {
+          "line": 152,
+          "text": "#pragma omp for schedule(static)"
+        }
+      ]
+    },
+    {
+      "variant": "diagnostic",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_diagnostic.tar.gz",
+      "member": "WFA-GPU/lib/bt_gc.cuh",
+      "member_sha256": "ce9d162e20cf9b2ab099f5ed8edc363a7272a086d36cdcaa9020f9b4503675cf",
+      "anchors": []
+    },
+    {
+      "variant": "diagnostic",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_diagnostic.tar.gz",
+      "member": "WFA-GPU/lib/kernels/sequence_alignment_kernel.cu",
+      "member_sha256": "9a558b1991188406a44dc5c4e61f9b139c8a6625112b68806c5bc8dfa7d1081a",
+      "anchors": []
+    },
+    {
+      "variant": "diagnostic",
+      "archive_source_id_to_resolve": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_diagnostic.tar.gz",
+      "member": "WFA-GPU/external/WFA2-lib/wavefront/wavefront_backtrace_buffer.c",
+      "member_sha256": "d87978b666f2a696ded394e37e9ee859fdb79ba3592122737dffcbb7e6da37f6",
+      "anchors": [
+        {
+          "line": 358,
+          "text": "void wf_backtrace_buffer_mark_backtrace("
+        },
+        {
+          "line": 376,
+          "text": "void wf_backtrace_buffer_mark_backtrace_batch("
+        },
+        {
+          "line": 457,
+          "text": "bt_block_idx_t wf_backtrace_buffer_compact_marked("
+        }
+      ]
+    }
+  ],
+  "pipeline": "Launch current batch; synchronously call prior-batch CPU rescue/RLE helper; enqueue current result copy and next input copy; synchronize stream; then submit next batch.",
+  "callback_terminology": "The report's CPU callback is an ordinary direct host function call, not a cudaLaunchHostFunc/cudaStreamAddCallback runtime callback.",
+  "buffer_dependency": "Current host results and offloaded traceback arrays are reused. Nonblocking dispatch requires owned snapshots or slots until both rescue and normal RLE users finish.",
+  "static_scheduling": "Existing helper assigns contiguous batch indices by OpenMP schedule(static); four observed threads have unequal rescue work.",
+  "scope": "Source annotations from verified first-round archive snapshots; full original snapshots remain outside this curated import."
+}

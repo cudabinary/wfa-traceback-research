@@ -1,0 +1,110 @@
+{
+  "files": [
+    {
+      "path": "results/round1_causal_audit_20261021/audit_results.json",
+      "bytes": 1578,
+      "sha256": "8945bc47d02ad8ac92fa04dd8e80f348afa1793ea2a29530a4cab59d1721fcfa"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/claims_and_falsifiers.csv",
+      "bytes": 2692,
+      "sha256": "7ff39b44a565524b2bf2cb76a29c4ab1952591fdc7ff9519c3765491ef82a2f9"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/diagnostic_batches.csv",
+      "bytes": 6489,
+      "sha256": "9f0733e9c86888a6a1c321576f337ca7a50e744d89c5107113be947351837d79"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/diagnostic_rescue_threads.csv",
+      "bytes": 510,
+      "sha256": "6f87dbf5a083646ea1992ff111c59e07fb37d4d2b06eeb3dda5b2ce1afc0821f"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/diagnostic_summary.json",
+      "bytes": 737,
+      "sha256": "d6dc43b3879ee765bfab32a022778508c9533cbe992fe213c802cd278942e208"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/first_round_validation.json",
+      "bytes": 769,
+      "sha256": "6ba4b31d2f0ea9370875320d2442f6ac0ede57d81cb025de534936281f32d958"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/fixed_duration_fifo_replay.json",
+      "bytes": 1078,
+      "sha256": "ee0758024be8f631d7a03c4bad2022feaf42a1ec6085e58dc73efbbc0cc16521"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/gpu_window_requirements.json",
+      "bytes": 1011,
+      "sha256": "872e56ad03d06371fe695ef7f2ff0b8c7f52e152e4987c6cf3cb2568057d3cd3"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/import_receipt.json",
+      "bytes": 4582,
+      "sha256": "07e4f0cfbce84060f3cd5a00194a14fca5e474830ee152b1df06a72b27642a31"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/minimal_2x2_protocol.json",
+      "bytes": 8688,
+      "sha256": "3b018e11e937d3368c9817faa8eaee4807b85e579052fb49c6028915c62600eb"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/paired_contrasts.csv",
+      "bytes": 440,
+      "sha256": "f5aeab4503d46b862de5e728d55945f01a527125f7b3753b34bcc0bafb644275"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/primary_runs.csv",
+      "bytes": 1807,
+      "sha256": "acef842e1476cc1e7753a644b3ad3cee367a21f4fb7dd158b4e5e191053ed353"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/queue_ownership_model.py",
+      "bytes": 6066,
+      "sha256": "74d3cdbd33bf567a50c7a4c59fa02d3335a2fcf69c01080a67ed9d5f240c51e0"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/queue_ownership_model_result.json",
+      "bytes": 2260,
+      "sha256": "d57f911b6cb5b22d30d4c720990b19871e9de68a6a7dd57aa815b155c45ef710"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/README.txt",
+      "bytes": 2384,
+      "sha256": "15597fc888afb096fb944542c3ec75bcc1e3167496e60471590b50cfd86757e5"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/required_raw_identities.json",
+      "bytes": 33716,
+      "sha256": "1e98fccb6d93428b6bdc3031cac2e371ff7090f34fae5aff0922ae60eba9c319"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/restoration_check.json",
+      "bytes": 34277,
+      "sha256": "3dac1d8d912f8b2193c33431e84a012e0bb0749ab984b2ad2eed720ced1567af"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/scope_separation.json",
+      "bytes": 10348,
+      "sha256": "7ddae3b0371f87149e481480871c54416e76ccb523c51d5260edaff385553730"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/seed_tracked_file_hashes.json",
+      "bytes": 7262,
+      "sha256": "86b631114e5c3b6af92a44660193faf0e637cb15cbc09759c64b14c71b717f2d"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/source_annotations.json",
+      "bytes": 7857,
+      "sha256": "9eab40e03cd9575e813a91dba03bc51ca1495010e771edbf279a0aace27b7a68"
+    },
+    {
+      "path": "results/round1_causal_audit_20261021/summary.json",
+      "bytes": 3590,
+      "sha256": "d98576d01acb2ffdf5d1f9713552ffe4099cd69b400eb86cc6fd0de67cd51cbf"
+    }
+  ],
+  "scope": "Completed curated round1 import and protected-restore review; excludes this manifest itself"
+}

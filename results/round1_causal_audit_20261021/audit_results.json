@@ -1,0 +1,23 @@
+{
+  "audit_time_UTC": "2026-10-21T02:57:26.291665+00:00",
+  "primary_n_per_mode": 5,
+  "primary_OFF_median_s": 28.12126841700001,
+  "primary_ON_median_s": 24.32003471099995,
+  "difference_of_medians_s": 3.801233706000062,
+  "reduction_of_medians_pct": 13.517291075327602,
+  "median_of_paired_differences_s": 3.801233706000062,
+  "all_five_paired_differences_positive": true,
+  "new_native_runs": 0,
+  "new_compilations": 0,
+  "new_source_mutations": 0,
+  "old_exactness": "Prior full-CIGAR semantic validation preserved through sealed output identity. This audit rechecks score/reference equality, output/ID coverage, raw status and bytes/SHA256; it does not re-run alignment or independently revalidate CIGAR base semantics.",
+  "new_computation": "Recomputed receipt medians and paired contrasts, raw reason/ID matches, same-domain timing gaps, per-thread rescue imbalance and explicitly conditional fixed-duration FIFO replay.",
+  "identifiability": "Historical GC effect is a total pipeline effect. Queue intervention and dynamic-rescue effects remain unmeasured. No percentage attribution or shared-pool witness is established.",
+  "finalized_UTC": "2026-10-21T03:04:27.205239+00:00",
+  "initial_raw_validation_checks": 415,
+  "retained_initial_outputs_reverified": 25,
+  "CPU_abstract_ownership_model_status": "BOUNDED_MODEL_PASS_WITH_EXPECTED_MUTANT_COUNTEREXAMPLE",
+  "CPU_abstract_ownership_model_states": 252,
+  "original_raw_files_accessible_at_finalization": 0,
+  "full_raw_rerun_after_generator_updates": "NOT_COMPLETED_SOURCE_UNAVAILABLE"
+}

@@ -1,0 +1,65 @@
+{
+  "status": "COMPLETED_FIRST_ROUND_CURATED_IMPORT",
+  "seed_commit": "bb0a83a766d65a237dd16aab87a63ab706b4a858",
+  "seed_tracked_files_compared_byte_for_byte_with_HEAD": 43,
+  "initial_curated_manifest_entries": 40,
+  "seed_file_manifest_sha256": "4e789287624a28b5fc245725f608e37846585ca8560441daa5698420d2bac9c9",
+  "seed_source_manifest_sha256": "7fe67e61404f3f891f28e7083242f4f955b0d8ddd5b8d36ae7738f5330956a0e",
+  "first_round_audit_manifest_sha256": "369c7c2b61a62ff4a1c6ce0fe82ff512334f284ac6cce2733e0a1c477eca3afe",
+  "first_round_report": {
+    "original_relative_name": "REPORT_KO.txt",
+    "bytes": 9890,
+    "sha256": "ee6be839dd1d1b605b22ca1af91455b2c457fe69872ac0981885fe3ab6a4ac02",
+    "location": "Preserved original audit outside Git; Korean prose is not rewritten or imported."
+  },
+  "historical_numeric_comparisons": [
+    {
+      "choice": "g0c20w32",
+      "status": "EXACT_NUMERIC_MATCH",
+      "runs": 5,
+      "median_s": 28.12126841700001,
+      "reserved_bytes": 5739913483,
+      "capacity_rescues": 118
+    },
+    {
+      "choice": "g1c20w32",
+      "status": "EXACT_NUMERIC_MATCH",
+      "runs": 5,
+      "median_s": 24.32003471099995,
+      "reserved_bytes": 5739913483,
+      "capacity_rescues": 0
+    }
+  ],
+  "direct_seed_source_identity_overlap_with_112_audited_inputs": [],
+  "restoration_status": "The setup and this curated import do not restore or prove current availability of all 112 original raw inputs. Original-path unavailability remains the last confirmed state; no new raw-path probing or remote restore was performed.",
+  "initial_raw_verification": "415 checks passed before original files became unavailable; 25 first-run outputs were preserved and checked against the initial run manifest.",
+  "completed_new_analysis": [
+    "Recomputed primary medians and five matched contrasts from original receipts",
+    "Matched the same 118 capacity-failure IDs across all GC-OFF repeats",
+    "Compared within-device pair envelopes and host callback durations without bridging clocks",
+    "Measured rescue-thread imbalance and ran a conditional fixed-duration replay",
+    "Specified the bounded 2x2 and falsifiers",
+    "Explored 252 finite CPU ownership states and obtained the expected unsafe early-release counterexample"
+  ],
+  "unestablished": [
+    "Native asynchronous-queue speedup",
+    "Pipeline-independent pure GC instruction benefit",
+    "Native race freedom",
+    "Shared-pool witness or novelty",
+    "Independent-corpus or architecture-wide generalization"
+  ],
+  "next_single_step": "Specify the actual host change and exact slot-byte formula, then review pointer ownership and synchronization against the preserved source. No GPU execution is authorized by this import.",
+  "remaining_gates": [
+    "Verify any restored raw inputs against the 112 identity entries before a full raw replay",
+    "Exact ABI slot-memory formula and host limits",
+    "Actual implementation/native correctness gates",
+    "Exclusive GPU schedule and explicit build/GPU authorization",
+    "Before future transfers, merge supplemental task-only counters with current MAIN counters exactly once and bound storage/transfer costs; actual account billing remains unverified"
+  ],
+  "first_round_ZIP_exists": false,
+  "ZIP_created_by_import": false,
+  "new_GPU_runs": 0,
+  "new_compilations": 0,
+  "new_remote_transfers": 0,
+  "archival_status": "Local curated import only. The new round has no immutable B2 object/checkpoint receipt yet; do not infer it from seed backup receipts."
+}

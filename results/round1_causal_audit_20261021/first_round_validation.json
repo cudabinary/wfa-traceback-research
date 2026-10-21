@@ -1,0 +1,16 @@
+{
+  "status": "PRESERVED_OUTPUT_AND_CPU_MODEL_CHECKS_PASS_RAW_REPLAY_UNAVAILABLE",
+  "initial_raw_checks": 415,
+  "initial_raw_result": "PASS_AT_RECORDED_INITIAL_TIME",
+  "initial_files_consumed": 112,
+  "initial_sealed_source_matches": 110,
+  "retained_initial_data_outputs_hash_matches": 25,
+  "post_success_generator_changed": true,
+  "new_full_raw_rerun_completed": false,
+  "currently_accessible_original_files": 0,
+  "CPU_abstract_model_status": "BOUNDED_MODEL_PASS_WITH_EXPECTED_MUTANT_COUNTEREXAMPLE",
+  "CPU_abstract_states": 252,
+  "native_GPU_runs": 0,
+  "new_compilations": 0,
+  "scientific_claim": "Only bounded evidence reanalysis and abstract model properties; no native queue speedup, generic race proof or shared-pool novelty claim."
+}

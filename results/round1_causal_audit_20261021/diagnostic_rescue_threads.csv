@@ -1,0 +1,17 @@
+﻿run_id,batch,thread,rescue_count,sum_measured_rescue_intervals_s
+diag_g0c20w32,0,0,39,10.146492071
+diag_g0c20w32,0,1,38,10.794338406
+diag_g0c20w32,0,2,19,4.925080606
+diag_g0c20w32,0,3,12,2.873980503
+diag_g0c20w32,1,0,7,0.9580602739999999
+diag_g0c20w32,1,1,3,0.384336071
+diag_g0c20w32,1,2,0,0
+diag_g0c20w32,1,3,0,0
+diag_g1c20w32,0,0,0,0
+diag_g1c20w32,0,1,0,0
+diag_g1c20w32,0,2,0,0
+diag_g1c20w32,0,3,0,0
+diag_g1c20w32,1,0,0,0
+diag_g1c20w32,1,1,0,0
+diag_g1c20w32,1,2,0,0
+diag_g1c20w32,1,3,0,0
