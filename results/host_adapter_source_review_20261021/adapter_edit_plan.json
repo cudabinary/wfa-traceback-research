@@ -1,0 +1,81 @@
+{
+  "status": "EXACT_PINNED_SOURCE_EDIT_PLAN_NOT_AN_APPLIED_NATIVE_PATCH",
+  "source_archive_sha256": "6519a817e52d72e74938937b7397ad653b319dde5652843a2c311e9d644e232f",
+  "changes": [
+    {
+      "file": "lib/align.cu",
+      "anchor_lines": [
+        71,
+        77
+      ],
+      "action": "Allocate identical Q4 pinned result/tail slots for GATED and QUEUED; carry original global from, actual count and generation"
+    },
+    {
+      "file": "lib/align.cu",
+      "anchor_lines": [
+        262,
+        284
+      ],
+      "action": "After real current submission, notify prior CPU eligibility; preserve the old completion gate in GATED, omit only the wait in QUEUED"
+    },
+    {
+      "file": "lib/align.cu",
+      "anchor_lines": [
+        376,
+        431
+      ],
+      "action": "Copy to the currently leased slot using the actual unchanged helper; check stream2 completion and both transfers before READY"
+    },
+    {
+      "file": "utils/wfa_cpu.c",
+      "anchor_lines": [
+        30,
+        93,
+        114
+      ],
+      "action": "Call unchanged helper on owning slot; use original global pointers/index and free only after rescue, normal RLE and parallel-region join"
+    },
+    {
+      "file": "lib/align.cu",
+      "anchor_lines": [
+        305,
+        373
+      ],
+      "action": "Keep optional internal validation with the owning service job, never on an unsynchronized producer; measured public entry fixes false"
+    },
+    {
+      "file": "lib/align.cu",
+      "anchor_lines": [
+        394,
+        400,
+        438,
+        529
+      ],
+      "action": "Use explicit error/drain ownership path, initialize loop/job state, flush last dispatch, join before final result use, return and free"
+    },
+    {
+      "file": "lib/aligner.c",
+      "anchor_lines": [
+        231,
+        237,
+        262
+      ],
+      "action": "Preserve synchronous public API and borrowed global-state lifetime; no pending job may survive return/destroy"
+    }
+  ],
+  "kept_fixed": [
+    "GPU kernels and device arena/result allocation",
+    "E16384,C20M,w32,B512 and all input/scoring/output settings",
+    "routed16/rescue4 and the same logical CPU capacity/control-thread topology",
+    "per-batch aligner construction and rescue assignment in core 2x2"
+  ],
+  "strong_baseline": "Separately qualify both GC modes with dynamic rescue scheduling; incomplete factor cells cannot identify all interactions",
+  "failure_policy": "No READY/output success on failed completion; propagate failure and wake all waiters, without free migration or silent resource expansion",
+  "not_completed": [
+    "Actual concurrent native adapter integration",
+    "Descriptor/full host-memory budget freeze",
+    "Native nvcc/CUDA correctness/race/performance tests",
+    "Independent full-CIGAR validation of new adapter outputs",
+    "Exclusive authorized GPU discrimination window"
+  ]
+}

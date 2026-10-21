@@ -1,0 +1,113 @@
+{
+  "status": "CONDITIONAL_SOURCE_ORDERING_REVIEW_COMPLETE",
+  "archive_sha256": "6519a817e52d72e74938937b7397ad653b319dde5652843a2c311e9d644e232f",
+  "full_copy_helper": {
+    "file": "source_reference/lib/sequence_alignment.cu",
+    "first_line": 346,
+    "last_line": 368,
+    "operations": [
+      {
+        "destination": "alignment_result_t[count]",
+        "stream": "caller stream2",
+        "bytes": "count*20"
+      },
+      {
+        "destination": "wfa_backtrace_t[K*count]",
+        "stream": "same caller stream2",
+        "bytes": "count*K*8"
+      }
+    ],
+    "synchronization_inside_helper": false,
+    "error_macro_is_completion_barrier": false
+  },
+  "normal_path": [
+    {
+      "file": "source_reference/lib/align.cu",
+      "line": 247,
+      "event": "stream1 H2D completion before packing"
+    },
+    {
+      "file": "source_reference/lib/align.cu",
+      "line": 259,
+      "event": "stream2 packing completion"
+    },
+    {
+      "file": "source_reference/lib/align.cu",
+      "line": 262,
+      "event": "current alignment submitted to stream2"
+    },
+    {
+      "file": "source_reference/lib/align.cu",
+      "line": 284,
+      "event": "previous CPU rescue and normal RLE finish before reusing pinned arrays"
+    },
+    {
+      "file": "source_reference/lib/align.cu",
+      "line": 376,
+      "event": "current two-copy D2H enqueued on stream2"
+    },
+    {
+      "file": "source_reference/lib/align.cu",
+      "line": 431,
+      "event": "stream2 completion precedes next iteration CPU read"
+    },
+    {
+      "file": "source_reference/lib/align.cu",
+      "line": 438,
+      "event": "last batch consumed after final loop completion"
+    }
+  ],
+  "distance_path": {
+    "copy_line": 833,
+    "synchronize_line": 884,
+    "final_CPU_line": 892,
+    "full_CIGAR_benchmark_comparator": false
+  },
+  "public_API": {
+    "file": "source_reference/lib/aligner.c",
+    "entry": 237,
+    "full_call": 244,
+    "check_correctness_argument": false,
+    "synchronous_return": 262,
+    "destruction": 231
+  },
+  "qualifications": [
+    {
+      "kind": "early_break",
+      "lines": [
+        394,
+        400,
+        847,
+        853
+      ],
+      "scope": "Guards may bypass the usual loop-end wait after copy enqueue; intended unreachable with valid immutable prepared metadata, but must not be treated as a successful ready path if taken."
+    },
+    {
+      "kind": "unchecked_sync_return",
+      "lines": [
+        431,
+        884
+      ],
+      "scope": "Adapter must check completion errors directly and never publish READY on a failed synchronization."
+    },
+    {
+      "kind": "initial_previous_locals",
+      "lines": [
+        217,
+        226,
+        227,
+        228
+      ],
+      "scope": "Previous-state locals are copied before the batch>0 guard; initialize shared adapter state. No measured consequence is claimed."
+    },
+    {
+      "kind": "internal_validation",
+      "lines": [
+        305,
+        373
+      ],
+      "scope": "Any enabled validation must be owned and completed before slot release; ordinary public full-CIGAR path passes false."
+    }
+  ],
+  "conclusion": "No normal-path premature read is established from helper Async calls alone. No universal CUDA race-freedom proof is asserted."
+}

@@ -1,0 +1,30 @@
+Run only in a fresh checkout/copy with an existing Python and WSL CPU g++14.
+No installation, native alignment, CUDA build, GPU run or network access occurs.
+
+1. Verify an already restored protected pack/archive/member set to a NEW output:
+   python tools/verify_restored_host_source.py --protected-source <protected-folder> --output local_only/new_source_identity_check
+   This reads the complete existing 64-MiB pack, reconstructs its logical extent
+   in memory, and verifies the logical archive and selected members. It does
+   not download anything or write to the protected folder. Choose a new output
+   each time. Its copied source is not automatically a full build environment.
+
+2. Compile/run the CPU ABI/deferred-copy mock against the checked-in exact
+   source excerpts in results/host_adapter_source_review_20261021:
+   python tools/run_host_copy_cpu_mock.py --build-name cpu_mock_new_run --result local_only/cpu_mock_new_result.json
+   Existing Ubuntu /usr/bin/g++-14 is used with ASan/UBSan. All build products
+   stay in ignored local_only. CUDA annotations are empty mock annotations,
+   not device compilation. The actual copy helper body is included verbatim.
+   Confirm scalar sizes, field offsets/static assertions, K and four cases.
+   Compile elapsed time and debug-binary hash need not be bitwise reproducible
+   across another directory/toolchain. No such timing or identity claim is made.
+
+3. Inspect restore_verification.json, caller_sync_review.json,
+   abi_and_copy_cpu_mock.json, corrections_to_prior_model.json and
+   adapter_edit_plan.json. SOURCE_REVIEW.txt connects the entire source path.
+   file_manifest.json verifies this completed result snapshot, excluding itself.
+
+The prior ownership model and first-round timings are retained in their older
+directories. This stage does not replay original scores/CIGARs or raw events.
+The protected archive now resolves the selected source block; complete
+restoration of the historical 112 consumed inputs remains unestablished.
+Existing English ZIP/Library delivery is not repeated by these commands.

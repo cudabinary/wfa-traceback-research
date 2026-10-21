@@ -1,0 +1,30 @@
+{
+  "status": "VERIFIED_SOURCE_STATIC_REVIEW_AND_CPU_MOCK_COMPLETE",
+  "base_commit": "a23864d1199389f7a5824705e3210c1d0543600d",
+  "pack_bytes_checked": 67108864,
+  "logical_archive_bytes_checked": 1108320,
+  "operator_listed_members_compared": 8,
+  "copied_archive_members": 11,
+  "earlier_reference_members_matched": 2,
+  "CPU_mock_cases": 4,
+  "CPU_mock_sanitizers": "ASan/UBSan pass for CPU object accesses only",
+  "new_CPU_builds": 1,
+  "new_CUDA_builds": 0,
+  "new_GPU_runs": 0,
+  "new_B2_transfers": 0,
+  "old_ZIP_or_Library_delivery_repeated": false,
+  "old_protected_source_modified": false,
+  "actual_ABI_values_match_prior_model": true,
+  "pinned_slot_payload_Q4_B512_E16384_bytes": 33595392,
+  "metadata_and_full_host_peak": "NOT_YET_FROZEN",
+  "normal_source_path_premature_read_from_copy_helper": "NOT_ESTABLISHED",
+  "native_async_adapter": "NOT_IMPLEMENTED_OR_MEASURED",
+  "next_step": "Write the bounded host-only adapter diff and CPU integration/error/validation lifecycle mocks against the now-verified source",
+  "GPU_prerequisites": [
+    "Exact shared source/binary/kernel and CPU/host-memory contract",
+    "Checked real stream and error handling",
+    "Mixed full-CIGAR/rescue/tail/wrap tests and optimal outputs",
+    "Fixed strong software controls and safe event tracing",
+    "Explicit GPU authorization and exclusive coordinated window"
+  ]
+}

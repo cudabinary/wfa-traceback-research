@@ -1,0 +1,105 @@
+{
+  "files": [
+    {
+      "path": "results/host_adapter_source_review_20261021/abi_and_copy_cpu_mock.json",
+      "bytes": 1403,
+      "sha256": "3301204f4d132050c0b17e0fe6cd5345b918605444a22258a55be9eba93bcbac"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/adapter_edit_plan.json",
+      "bytes": 2962,
+      "sha256": "79692fcda6c60ad52b325b90185db7afcd310ecaf18ebb53da047663569ee446"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/caller_sync_review.json",
+      "bytes": 3369,
+      "sha256": "6c545fb8a928bf3cdcdbc8b7b5b98cf36aad9d453292b82fedecd49f7cbca543"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/copyInResults.inc",
+      "bytes": 1129,
+      "sha256": "338109dbba45a1099b08469f8822b6d1408c46018d7d65d4d9f1018de993ffc1"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/corrections_to_prior_model.json",
+      "bytes": 1222,
+      "sha256": "5862afdd5ccd4b230259cde1e495c9ddebd6511326631e6430d75cabc5ecf4d3"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/REPRODUCE.txt",
+      "bytes": 2079,
+      "sha256": "0b7bb74506cc115d90431e3788500f152338e3df3e5b7e73ff4af7935634c0bb"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/restore_verification.json",
+      "bytes": 5964,
+      "sha256": "81902e7e4b7b12c592ed9360223ba14b6075ca91fd44cb77e4cff817d919c8c1"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/lib/align.cu",
+      "bytes": 40345,
+      "sha256": "0f3b7bc4dd56ccddd2c73160ec25a859b4492df479baf42f98fbfa4ac18fdea5"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/lib/aligner.c",
+      "bytes": 9411,
+      "sha256": "7c68417a48a1d3661db4fda35291ef01a1ae70a432dcb8d5f63d7a9b4c07234d"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/lib/alignment_results.h",
+      "bytes": 2028,
+      "sha256": "b430c7be3a7b82e64427310b197de8bccb83cc25cac84013e3fbf4f8a39789a9"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/lib/kernels/common_alignment_kernels.cuh",
+      "bytes": 5123,
+      "sha256": "3a0d71d753b3dcbb24348f11b186984f21cc8307312593ec4c2cb11ed91a40b0"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/lib/kernels/sequence_alignment_kernel.cuh",
+      "bytes": 2515,
+      "sha256": "0826c963e53b34278b08c64960d7ad56190678ef24c2867cc52ca4a9a4767fc7"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/lib/sequence_alignment.cu",
+      "bytes": 22057,
+      "sha256": "3bcd28219f7516d1cfae81cb181ceaf02d4a5db9ae4c4ebc3d27614c751fc6fd"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/lib/sequence_alignment.cuh",
+      "bytes": 5810,
+      "sha256": "8367d8b3b10804ddb815a13d2f67b7d5e073ad0fa68256894eda64638fd2edc0"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/lib/wfa_types.h",
+      "bytes": 2797,
+      "sha256": "72e5f9e14ab073bf76d34c5737f7820fa1c2b4d96ca3befa08429a8b47c5e9ed"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/utils/cuda_utils.cuh",
+      "bytes": 1638,
+      "sha256": "4e71c2f662c1669f21826d9fca89e21151597125b65f7df67d57dfa224558f98"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/utils/sequences.h",
+      "bytes": 1475,
+      "sha256": "d911183f553baad89d7ed883028808692bffbd1644b72d699f2e14fae4d820e5"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/source_reference/utils/wfa_cpu.c",
+      "bytes": 9620,
+      "sha256": "af3aafa9a3e94a6adbc64b75f17ede2f78f31e992393ccb7ccbb19284a5d1f95"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/SOURCE_REVIEW.txt",
+      "bytes": 10101,
+      "sha256": "329bc58cd1aefda5213d440852c8eeaeae0ccedfd334e1a01d3b93188b766c30"
+    },
+    {
+      "path": "results/host_adapter_source_review_20261021/summary.json",
+      "bytes": 1404,
+      "sha256": "83a052e16ddf0a9af92f6dfee873f38d663cb9865a1766f081cce46eb4dc22ba"
+    }
+  ],
+  "scope": "Pinned source identity, whole-call-path review and CPU mock only; no native GPU result"
+}

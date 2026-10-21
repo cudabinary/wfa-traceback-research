@@ -1,0 +1,153 @@
+Verified corrected-source review and minimal adapter plan, 2026-10-21
+Base: a23864d1199389f7a5824705e3210c1d0543600d
+
+1. Direct restore verification
+The existing 67,108,864-byte pack hash, its extent, the complete 1,108,320-byte
+logical archive hash, and all eight operator-listed extracted member hashes
+were checked directly. The archive is SHA256
+6519a817e52d72e74938937b7397ad653b319dde5652843a2c311e9d644e232f.
+The earlier align.cu and wfa_cpu.c reference hashes also match. Additional
+sequences, public-caller and error-macro source is read from that same archive.
+No protected source was edited and no new archive network transfer occurred.
+The operator's integrated counters are not charged or merged a second time.
+This establishes the selected source identity, not restoration of all 112
+historical inputs or a fresh native performance/correctness result.
+
+2. Entire copy operation and caller chain
+sequence_alignment.cu:346-368 contains the full-CIGAR copy helper. It computes
+K(E)*count traceback records and a tail origin after C_effective(E)*workers
+arena records. It enqueues results[count] and that tail on the SAME supplied
+stream, then returns. CUDA_CHECK_ERR (cuda_utils.cuh:28-35) checks the last
+CUDA error and exits on error; it is not a completion synchronization.
+The entire archive has one full helper definition, one declaration and one
+direct full caller, plus the analogous three distance-helper occurrences.
+
+Full-CIGAR normal path in align.cu:
+* 247 waits for stream1 H2D before packing; 259 waits for stream2 packing.
+* 262-278 launches the current alignment on stream2.
+* 284-296 synchronously consumes the PREVIOUS host result/tail while that
+  current GPU batch runs. This helper finishes rescue AND normal RLE.
+* 376-383 enqueues the CURRENT result/tail copy on stream2 after that reader
+  has returned. It cannot overwrite the previous reader on this normal path.
+* 431 waits for stream2, which orders the current kernel and BOTH copies.
+  The next iteration's previous-batch CPU read is after this completion point.
+* 438-450 consumes the final batch after the loop's last stream2 wait.
+* 517-529 destroys streams and frees device/pinned arrays after CPU work.
+The device buffers are reused only after that same stream ordering on the
+normal path. The two copies are not directed to two independent streams.
+The distance branch similarly copies at 833-836, waits at 884 and consumes
+the last batch at 892-902. It has no full traceback-tail copy and is outside
+the exact-full-CIGAR performance question, but was checked for caller coverage.
+
+aligner.c:237-262 calls the selected launcher synchronously. Full-CIGAR mode
+passes check_correctness=false. Public outputs are read after wfagpu_align
+returns; destroy at 231-234 frees the global sequences, metadata and outputs.
+An adapter must drain before launcher/API return as well as before local free.
+
+Conclusion: absence of synchronization INSIDE copyInResults is not evidence
+of an existing premature normal-path CPU read. The caller supplies ordering.
+This is a conditional source dependency argument, not native race certification.
+
+3. Error/alternate-path qualifications
+The next-input size/bounds guards at align.cu:394/400 can break after copy-out
+was enqueued but before 431. The analogous distance guards are 847/853 before
+884. With valid immutable prepared metadata, the prior maximum-size audit and
+buffer invariants are intended to make those guards unreachable. If one is
+taken, normal final consumption must not be assumed safe merely from the usual
+loop ordering. No such error was demonstrated in the measured R2 runs here.
+Also, stream synchronize return values are not explicitly checked at those
+source calls. An adapter must check its completion status and fail without
+publishing READY or consuming incomplete data. Error logging is not completion.
+
+The first loop copies uninitialized from/to/count into previous-batch locals
+before the batch>0 guard. Their guarded consumers are unused at batch0. Record
+this source initialization caveat; do not infer a measured effect. Initialize
+the new adapter's job/loop state in a shared change for both candidate modes.
+Do not use stream destruction or ordinary output teardown as a readiness signal.
+
+4. Actual types, macros and CPU ABI check
+wfa_types.h defines two uint32 fields per traceback record and
+K(E)=E*2/(32/2), with integer arithmetic. alignment_results.h declares bool
+finished, int distance, the 8-byte backtrace pair and int num_bt_blocks.
+The g++14 LP64 CPU probe using those EXACT headers measured:
+alignment_result_t=20, alignment=4, offsets finished0/distance4/backtrace8/
+num_bt_blocks16; wfa_backtrace_t=8; sequence_pair_t=48; public result=32.
+K(16384)=2048. The source, CPU result and earlier conditional 20/8-byte model
+agree. This was a CPU compiler with mock annotations, not nvcc or CUDA runtime.
+
+Pinned payload for Q full-capacity slots is Q*B*(20+8*K(E)). For E16384,
+B512: one slot 8,398,848 bytes, four 33,595,392, extra over one 25,196,544.
+The last partial batch copies count rather than B entries; allocated capacity
+may remain B. Queue/control structs, stacks, synchronization, allocator/pinned
+overhead, global outputs and four BiWFA workspaces are not included in that
+payload number. Complete host peak and native ABI/allocation receipts remain
+required. No equivalent increase of GPU arena capacity is implied.
+
+C_effective controls the DEVICE tail origin, not K(E). Allocation, launch and
+copy agree on C_effective*workers followed by the result tail. Preserve E,
+workers, environment capacity and stride throughout a request; do not recompute
+them from a slot index or change the capacity environment during asynchronous
+jobs. CPU RLE uses per-pair offset K*(i-from), independent of the worker arena.
+
+5. Small verification against the real helper body
+The verbatim 346-368 function is compiled with the exact type headers and a
+deferred, single-thread CPU memcpy stream mock. Four cases check uncapped and
+guarded tail origins, full and partial batches, and capacity clamping. Return
+from the helper leaves both mock copies pending. Completing the first copy
+makes results visible but leaves the RLE tail stale. Only complete draining
+of both makes the payload available. Trailing unused entries remain untouched.
+The CPU ASan/UBSan build reports no diagnostics for those four mock cases.
+No CUDA libraries are linked, and no alignment or GPU operation is run.
+The prior 830-state ownership model remains separate, preserved evidence.
+Neither test establishes thread scheduling, real CUDA visibility, native race
+freedom, CIGAR correctness or speedup.
+
+6. Confirmed minimum experimental adapter changes
+Keep the same kernels, device arena/result allocation, E/C/workers/B, scoring,
+input ordering and public synchronous exact-full-CIGAR contract.
+A. Replace pinned arrays at 71-77 with bounded owning slots allocated equally
+   in both modes. Preserve checked count and global from, plus generation.
+B. After current kernel submission, notify the shared CPU service that the
+   preceding job is eligible. GATED waits at the old 284 gate; QUEUED omits
+   only that completion wait. Both use identical service and CPU resources.
+C. Pass current slot pointers to the REAL copy helper. Keep stream2 ordering
+   and check the completion return before READY; both copies must be complete.
+D. Invoke the unchanged CPU helper with slot results/tail and immutable global
+   sequence/metadata/output references. Release only after the whole helper
+   and any enabled internal validation finish. Preserve actual partial count.
+E. Internal check_correctness blocks must not remain on an unsynchronized
+   producer in QUEUED. The measured API path fixes false; a supported true path
+   needs validation within the owning service job before release, or an early
+   explicit rejection. Do not silently race the old validation block.
+F. Final dispatch, drain/join, error propagation and only then export/output/
+   launcher return/free. Wake all waiters on failure; never turn a partial
+   run into a successful result. CPU state0/empty queue must be initialized.
+G. Preserve the proposed next-submit service trigger equally. Acquire-before-
+   submit plus that trigger can circular-wait at Q1; the original inline
+   single-buffer implementation is NOT thereby shown to deadlock. Q4 remains
+   fixed; Q2/Q4 finite model passes are not an optimal-depth theorem.
+
+Set the service OpenMP thread policy explicitly. Do not give QUEUED free CPU
+cores, persistent aligners, changed rescue scheduling or unbounded snapshots.
+The static 2x2 separates GC x queue under fixed assignment. Both GC modes with
+dynamic rescue in the selected pipeline form the stronger-software qualifier.
+Six cells do not identify every three-factor interaction; do not infer those
+effects without their missing cells. No new performance campaign is started.
+
+7. Corrections and next gate
+The missing type/macro/copy-source block is now resolved for this exact archive.
+The earlier numeric payload formula was consistent and needs no numeric change.
+The abstract COPY_COMPLETE step must mean both real D2H operations completed;
+the new mock demonstrates why results-copy completion alone is insufficient.
+Normal-path source ordering supports the old synchronous control. Error-path
+and checked-completion requirements are now explicit; no old evidence is erased.
+
+Next: write the small bounded host-only adapter diff against this pinned source
+and validate lifecycle/error/validation-block behavior with CPU integration mocks.
+Before GPU discrimination: exact shared source/binary/kernel/CPU-resource and
+host-memory freeze; checked real streams and errors; multi-batch/tail/wrap/mixed
+rescue correctness; optimal score/full-CIGAR checks; fixed strong controls;
+queue trace safety; explicit GPU authorization and an exclusive coordinated
+window. The 111 other historical inputs are not needed to inspect these headers,
+but a complete historical raw replay is still not established. No GPU verdict
+or architecture/novelty claim follows from this review.

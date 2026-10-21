@@ -1,0 +1,25 @@
+{
+  "preserve_previous_results": true,
+  "entries": [
+    {
+      "previous": "Pinned type/macro/copy helper source unavailable",
+      "current": "Resolved for the exact corrected archive and selected members; no entire raw restoration claim"
+    },
+    {
+      "previous": "20/8-byte values were conditional source-model assumptions",
+      "current": "Same values confirmed by exact definitions and LP64 CPU g++ layout probe; native nvcc/runtime ABI still a gate"
+    },
+    {
+      "previous": "COPY_COMPLETE was a single abstract event",
+      "current": "For the real helper it must include both result and tail D2H operations; CPU mock demonstrates the incomplete intermediate state"
+    },
+    {
+      "previous": "Q1 can deadlock in proposed deferred-dispatch contract",
+      "current": "Still a contract-specific counterexample. It does not describe a deadlock in the original inline single-buffer caller"
+    },
+    {
+      "previous": "copy helper completion semantics uninspected",
+      "current": "Helper has no wait, CUDA_CHECK_ERR has no completion wait, and normal caller supplies stream2 completion. Early exits and failed waits require explicit failure handling."
+    }
+  ]
+}

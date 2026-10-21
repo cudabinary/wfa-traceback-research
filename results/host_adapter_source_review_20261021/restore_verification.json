@@ -1,0 +1,156 @@
+{
+  "status": "DIRECT_PACK_ARCHIVE_AND_MEMBER_IDENTITIES_PASS",
+  "source": {
+    "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_corrected.tar.gz",
+    "bytes": 1108320,
+    "sha256": "6519a817e52d72e74938937b7397ad653b319dde5652843a2c311e9d644e232f",
+    "extents": [
+      {
+        "file_offset": 0,
+        "pack_offset": 50705464,
+        "bytes": 1108320,
+        "pack_index": 329,
+        "pack_sha256": "881c2823242d2d359c3ba83e9f3cc3ebc7336653635fc9e3183d36fee0c797fb",
+        "remote": {
+          "action": "upload",
+          "bucketId": "172529a471525cb5aa1e0f12",
+          "contentLength": 67108864,
+          "contentSha1": "bb25270d43fe070388da38c06ba9ce45cdb1a665",
+          "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad066674dc_d20261021_m002549_c005_v0501031_t0023_u01792542349517",
+          "fileName": "research-archive/packs/sha256/88/881c2823242d2d359c3ba83e9f3cc3ebc7336653635fc9e3183d36fee0c797fb.pack",
+          "serverSideEncryption": {
+            "algorithm": "AES256",
+            "mode": "SSE-B2"
+          },
+          "uploadTimestamp": 1792542349517
+        }
+      }
+    ]
+  },
+  "protected_restore_receipt_sha256": "9d4613ea9d9a4d66cd2bb07655f143bc977ad2bbb41639cceffa9748ddf0d7d1",
+  "members": [
+    {
+      "member": "WFA-GPU/lib/wfa_types.h",
+      "bytes": 2797,
+      "sha256": "72e5f9e14ab073bf76d34c5737f7820fa1c2b4d96ca3befa08429a8b47c5e9ed",
+      "protected_extracted_member_compared": true,
+      "previous_reference_match": false
+    },
+    {
+      "member": "WFA-GPU/lib/alignment_results.h",
+      "bytes": 2028,
+      "sha256": "b430c7be3a7b82e64427310b197de8bccb83cc25cac84013e3fbf4f8a39789a9",
+      "protected_extracted_member_compared": true,
+      "previous_reference_match": false
+    },
+    {
+      "member": "WFA-GPU/lib/sequence_alignment.cu",
+      "bytes": 22057,
+      "sha256": "3bcd28219f7516d1cfae81cb181ceaf02d4a5db9ae4c4ebc3d27614c751fc6fd",
+      "protected_extracted_member_compared": true,
+      "previous_reference_match": false
+    },
+    {
+      "member": "WFA-GPU/lib/sequence_alignment.cuh",
+      "bytes": 5810,
+      "sha256": "8367d8b3b10804ddb815a13d2f67b7d5e073ad0fa68256894eda64638fd2edc0",
+      "protected_extracted_member_compared": true,
+      "previous_reference_match": false
+    },
+    {
+      "member": "WFA-GPU/lib/kernels/sequence_alignment_kernel.cuh",
+      "bytes": 2515,
+      "sha256": "0826c963e53b34278b08c64960d7ad56190678ef24c2867cc52ca4a9a4767fc7",
+      "protected_extracted_member_compared": true,
+      "previous_reference_match": false
+    },
+    {
+      "member": "WFA-GPU/lib/kernels/common_alignment_kernels.cuh",
+      "bytes": 5123,
+      "sha256": "3a0d71d753b3dcbb24348f11b186984f21cc8307312593ec4c2cb11ed91a40b0",
+      "protected_extracted_member_compared": true,
+      "previous_reference_match": false
+    },
+    {
+      "member": "WFA-GPU/lib/align.cu",
+      "bytes": 40345,
+      "sha256": "0f3b7bc4dd56ccddd2c73160ec25a859b4492df479baf42f98fbfa4ac18fdea5",
+      "protected_extracted_member_compared": true,
+      "previous_reference_match": true
+    },
+    {
+      "member": "WFA-GPU/utils/wfa_cpu.c",
+      "bytes": 9620,
+      "sha256": "af3aafa9a3e94a6adbc64b75f17ede2f78f31e992393ccb7ccbb19284a5d1f95",
+      "protected_extracted_member_compared": true,
+      "previous_reference_match": true
+    },
+    {
+      "member": "WFA-GPU/utils/sequences.h",
+      "bytes": 1475,
+      "sha256": "d911183f553baad89d7ed883028808692bffbd1644b72d699f2e14fae4d820e5",
+      "protected_extracted_member_compared": false,
+      "previous_reference_match": false
+    },
+    {
+      "member": "WFA-GPU/lib/aligner.c",
+      "bytes": 9411,
+      "sha256": "7c68417a48a1d3661db4fda35291ef01a1ae70a432dcb8d5f63d7a9b4c07234d",
+      "protected_extracted_member_compared": false,
+      "previous_reference_match": false
+    },
+    {
+      "member": "WFA-GPU/utils/cuda_utils.cuh",
+      "bytes": 1638,
+      "sha256": "4e71c2f662c1669f21826d9fca89e21151597125b65f7df67d57dfa224558f98",
+      "protected_extracted_member_compared": false,
+      "previous_reference_match": false
+    }
+  ],
+  "copy_symbols_in_entire_archive": [
+    {
+      "member": "WFA-GPU/lib/align.cu",
+      "line": 376,
+      "text": "copyInResults(results,"
+    },
+    {
+      "member": "WFA-GPU/lib/align.cu",
+      "line": 833,
+      "text": "copyInResults_distance(results,"
+    },
+    {
+      "member": "WFA-GPU/lib/sequence_alignment.cu",
+      "line": 346,
+      "text": "void copyInResults (alignment_result_t* const results,"
+    },
+    {
+      "member": "WFA-GPU/lib/sequence_alignment.cu",
+      "line": 476,
+      "text": "void copyInResults_distance (alignment_result_t* const results,"
+    },
+    {
+      "member": "WFA-GPU/lib/sequence_alignment.cuh",
+      "line": 88,
+      "text": "void copyInResults (alignment_result_t* const results,"
+    },
+    {
+      "member": "WFA-GPU/lib/sequence_alignment.cuh",
+      "line": 111,
+      "text": "void copyInResults_distance (alignment_result_t* const results,"
+    }
+  ],
+  "copy_function_verbatim_span": {
+    "member": "WFA-GPU/lib/sequence_alignment.cu",
+    "first_line": 346,
+    "last_line": 368,
+    "bytes": 1129,
+    "sha256": "338109dbba45a1099b08469f8822b6d1408c46018d7d65d4d9f1018de993ffc1"
+  },
+  "new_download_bytes": 0,
+  "new_upload_bytes": 0,
+  "budget_counters": "Read as an external receipt only; not re-added, subtracted or changed here.",
+  "protected_source_modified": false,
+  "entire_112_input_restore": false,
+  "scientific_scope": "Source identity and static review only; not alignment correctness, race freedom or performance.",
+  "inherited_descriptor_status_note": "The operator nested source status was a historical retrieval-plan label; direct local identities, not that label, determine this review."
+}
