@@ -1,0 +1,20 @@
+{
+  "first_round_manifest_sha256": "369c7c2b61a62ff4a1c6ce0fe82ff512334f284ac6cce2733e0a1c477eca3afe",
+  "members": [
+    {
+      "original_audit_member": "source_snapshots/corrected/lib/align.cu",
+      "copied_relative_path": "results/host_adapter_cpu_20261021/source_reference/lib/align.cu",
+      "bytes": 40345,
+      "sha256": "0f3b7bc4dd56ccddd2c73160ec25a859b4492df479baf42f98fbfa4ac18fdea5",
+      "scope": "Exact preserved archive-member reference, not a complete restored source archive or native build."
+    },
+    {
+      "original_audit_member": "source_snapshots/corrected/utils/wfa_cpu.c",
+      "copied_relative_path": "results/host_adapter_cpu_20261021/source_reference/utils/wfa_cpu.c",
+      "bytes": 9620,
+      "sha256": "af3aafa9a3e94a6adbc64b75f17ede2f78f31e992393ccb7ccbb19284a5d1f95",
+      "scope": "Exact preserved archive-member reference, not a complete restored source archive or native build."
+    }
+  ],
+  "original_files_changed": false
+}

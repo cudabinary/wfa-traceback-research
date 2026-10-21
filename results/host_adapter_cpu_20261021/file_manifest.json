@@ -1,0 +1,50 @@
+{
+  "files": [
+    {
+      "path": "results/host_adapter_cpu_20261021/ADAPTER_CONTRACT.txt",
+      "bytes": 7312,
+      "sha256": "d845a69d6ad5ee1116d83e4b532b21e79b6af6ad2bf0136056d63257995109fc"
+    },
+    {
+      "path": "results/host_adapter_cpu_20261021/host_slot_capacity.json",
+      "bytes": 1519,
+      "sha256": "c27aff2df8d3302433fc389f1909e3d68ffaab1b3601d4e0b7adf20a4076ec9b"
+    },
+    {
+      "path": "results/host_adapter_cpu_20261021/minimal_retrieval_plan.json",
+      "bytes": 7126,
+      "sha256": "d61d51f397186784e8bc7d1255825a07670e36ec0cb6ca33fbe6d3a7d6e10b80"
+    },
+    {
+      "path": "results/host_adapter_cpu_20261021/ownership_checks.json",
+      "bytes": 5764,
+      "sha256": "6aaf13baf3fc9a5b1b5135a4fd824547eedd3804167583079ff58ab6be242163"
+    },
+    {
+      "path": "results/host_adapter_cpu_20261021/round1_table_recomputation.json",
+      "bytes": 1744,
+      "sha256": "310d3d49026117e66a366c08afc7980ce1b8c40cf11b114e6714b4997b2e071a"
+    },
+    {
+      "path": "results/host_adapter_cpu_20261021/source_reference/lib/align.cu",
+      "bytes": 40345,
+      "sha256": "0f3b7bc4dd56ccddd2c73160ec25a859b4492df479baf42f98fbfa4ac18fdea5"
+    },
+    {
+      "path": "results/host_adapter_cpu_20261021/source_reference/utils/wfa_cpu.c",
+      "bytes": 9620,
+      "sha256": "af3aafa9a3e94a6adbc64b75f17ede2f78f31e992393ccb7ccbb19284a5d1f95"
+    },
+    {
+      "path": "results/host_adapter_cpu_20261021/source_reuse_receipt.json",
+      "bytes": 993,
+      "sha256": "14de519339f37d0e5a61e469a757ec7b5660c88d51e3f91b561bb371db429056"
+    },
+    {
+      "path": "results/host_adapter_cpu_20261021/summary.json",
+      "bytes": 739,
+      "sha256": "a9179bde7613fc277f9d15a797ec5f58f17637684a171ff34ecc79728f438e60"
+    }
+  ],
+  "scope": "CPU-only adapter review, reused source, pinned offline retrieval plan and derived table recalculation; not native evidence"
+}

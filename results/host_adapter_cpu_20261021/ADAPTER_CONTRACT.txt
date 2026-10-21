@@ -1,0 +1,114 @@
+Host rescue adapter contract, CPU design review, 2026-10-21
+Base local commit: cecb0dc9d5e6a7baba97e49a63309337a9bb8524
+
+Evidence and limits
+The exact corrected align.cu and utils/wfa_cpu.c members are reused from the
+preserved first-round snapshots. Their hashes are in source_reuse_receipt.json.
+The full pinned type/macro definitions and copyInResults implementation are
+not locally available in that snapshot. No missing header is reconstructed.
+This is an implementation contract and finite CPU model, not a native patch,
+compiler result, CUDA correctness proof, or performance result.
+
+Actual call sites and proposed changes
+* align.cu:71-77 allocates one pinned result array and one pinned traceback
+  tail array. Replace those allocations with Q bounded owning slots, identical
+  in both candidate host modes. Preserve one device result/arena allocation.
+* align.cu:262-278 submits the current GPU batch. Notify the CPU service that
+  the next batch has been submitted before waiting at any old callback gate.
+* align.cu:284-296 directly invokes the previous batch's CPU helper. In GATED,
+  wait here for that job to finish. In QUEUED, omit only this completion wait.
+  Both modes use the same service, resources, copy path and scheduling rule.
+* align.cu:376-383 sends copyInResults to the current slot's result/tail arrays.
+  A slot must already be leased before D2H is enqueued. Exact helper semantics
+  must be checked in the missing pinned archive before changing native code.
+* align.cu:431 synchronizes stream2. Retain completion ordering initially;
+  publish READY only after the actual D2H into that slot is complete. No clock
+  interpolation or host timestamp implies this completion.
+* align.cu:438-450 handles the final batch directly. Replace with an explicit
+  final-dispatch permission and complete FIFO drain, followed by error checks.
+* align.cu:522-529 frees device and pinned allocations. All service work,
+  normal RLE, queued jobs and last slot readers must finish before free.
+
+Job and pointer contract
+A Job carries batch ID, original global from index, actual count, slot index,
+slot generation, penalties and result-tail stride K. Slot index is not from.
+For a final partial batch, count is the actual tail count, not fixed B.
+The slot owns alignment_result_t[count] and wfa_backtrace_t[count*K].
+The worker calls the existing helper with:
+  compute_alignments_cpu_threaded(count, from, slot.results, global_outputs,
+      sequences_metadata, sequences_buffer, slot.backtraces, K, x, o, e, false)
+This is the real argument mapping from wfa_cpu.c:30-39. The existing helper
+uses real_i=from+i, mutates slot.results[i].distance for rescued pairs, and
+writes global_outputs[real_i]. It then reconstructs normal GPU CIGAR using
+slot.backtraces + K*(i-from). Its two loops are separated by an OpenMP barrier.
+
+Keep the global raw sequences and CPU-read metadata stable until drain.
+Do not resize, resort or remap the arrays while service jobs borrow them.
+Producer packing for later batches must not modify an active job's metadata.
+Each output ID has one owner. Preserve the original GPU-finished classification:
+rescued outputs must not undergo a second normal-GPU reconstruction pass.
+Release is after the complete helper returns, including normal RLE, not after
+the last rescue. The source's ordinary host helper is not a CUDA runtime callback.
+
+Slot states and synchronization
+FREE -> RESERVED -> COPY_PENDING -> READY -> CPU_RESCUE -> CPU_NORMAL_RLE
+-> COMPLETE -> FREE. Carry the generation through the entire job and reject
+stale completion acknowledgments. Publish only after copy completion, using
+proper C++ synchronization. Acquire only a free matching generation. A CPU
+abstract state model does not establish the required native memory ordering.
+Bound slot ownership and FIFO storage; wait with explicit backpressure rather
+than allocating more snapshots. Propagate helper failures through a common
+shutdown/drain path. Do not close output or free borrowed state before join.
+
+Preserving the old overlap position
+To avoid giving one mode earlier CPU execution, both services defer batch b
+until GPU batch b+1 is submitted, except that final drain permits the last job.
+Publish the submission notification before GATED waits on the previous job.
+Reserve-before-submit plus this deferred dispatch can deadlock at Q=1:
+batch0 holds slot0, producer cannot acquire it for batch1, while CPU batch0
+waits for batch1 submission. The refined model captures this circular wait.
+Q=2 and Q=4 pass only the finite checked cases; Q=4 remains the fixed proposal.
+This does not prove an optimal queue size or a universal lower bound. If the
+dispatch trigger is changed to immediate service, it is a different adapter;
+do not silently reuse the same causal interpretation.
+
+Threads and strong alternatives
+Both candidate modes have the same producer/service topology, four OpenMP
+rescue/RLE compute threads, routed-CPU16, and the same 20-logical-CPU capacity.
+Control threads share that capacity; their work and stacks are not free.
+Set the OpenMP policy explicitly on the service thread, preserve per-batch
+aligner construction/destruction in both modes, and record actual threads.
+
+The static core 2x2 estimates GC x queue under fixed rescue assignment. Queue
+separation alone is not established as the strongest software comparator:
+the recorded rescue work is imbalanced. Add both GC modes with dynamic(1)
+rescue scheduling in the selected bounded pipeline to test residual GC value.
+Keep the normal-RLE schedule unchanged for that qualifier. Six cells cannot
+identify every queue x load-balancing interaction. If that interaction is a
+claim, freeze a full 2x2x2 instead of attributing it from incomplete cells.
+No cells, sweep or GPU measurements are executed in this CPU stage.
+
+Capacity
+See host_slot_capacity.json. The preserved model declares result A=20 bytes,
+tail record R=8 bytes, K=floor(2*E/16). At E16384/B512/Q4, pinned payload is
+33,595,392 bytes, 25,196,544 above one slot. These are conditional model bytes,
+not newly verified ABI values, total host RSS, VRAM residency or whole-memory
+equality. Metadata, queue storage, stacks, allocators, outputs and CPU alignment
+workspaces remain separate. Native type/macro assertions and allocation
+receipts are required before a new measured comparison.
+
+New supported and rejected statements
+SUPPORTED IN THE FINITE MODEL: complete copy/publication ordering, last-reader
+release, bounded Q2/Q4 progress, and explicit final flush avoid the exercised
+counterexamples. Original first-round arithmetic remains consistent.
+REJECTED FOR THIS CONTRACT: Q1 is always safe; rescue completion alone permits
+slot release; enqueue time establishes D2H readiness; cyclic slot index is a
+global pair index; the last batch always has B pairs; final drain is optional.
+UNKNOWN: asynchronous rescue speedup, native race freedom, pure GC benefit,
+optimal queue depth, architecture novelty and independent-input generality.
+
+Next single step
+Obtain the exact corrected archive through a separately authorized, pinned
+local reuse or 64-MiB pack restore, verify its logical hash, and inspect the
+type/macro and copy helper members. Then write the smallest native host diff
+against that source. No GPU build/run or remote restore is implied here.

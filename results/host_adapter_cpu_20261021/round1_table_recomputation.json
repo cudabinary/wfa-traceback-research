@@ -1,0 +1,60 @@
+{
+  "status": "PASS_DERIVED_TABLE_RECOMPUTATION_ONLY",
+  "off_median_s": 28.12126841700001,
+  "on_median_s": 24.32003471099995,
+  "median_reduction_pct": 13.517291075327602,
+  "paired_contrasts": [
+    {
+      "round": 0,
+      "off_s": 28.12126841700001,
+      "on_s": 24.32003471099995,
+      "off_minus_on_s": 3.801233706000062,
+      "reduction_pct": 13.517291075327602
+    },
+    {
+      "round": 1,
+      "off_s": 27.460030802999995,
+      "on_s": 24.211557682000148,
+      "off_minus_on_s": 3.248473120999847,
+      "reduction_pct": 11.829823295919075
+    },
+    {
+      "round": 2,
+      "off_s": 27.701138650000075,
+      "on_s": 23.790323655999828,
+      "off_minus_on_s": 3.9108149940002477,
+      "reduction_pct": 14.117885345482854
+    },
+    {
+      "round": 3,
+      "off_s": 28.136225793999984,
+      "on_s": 24.850094508999973,
+      "off_minus_on_s": 3.2861312850000104,
+      "reduction_pct": 11.679360654337563
+    },
+    {
+      "round": 4,
+      "off_s": 28.676038925000057,
+      "on_s": 24.399819333000096,
+      "off_minus_on_s": 4.276219591999961,
+      "reduction_pct": 14.912169714876173
+    }
+  ],
+  "same_device_domain_gaps": [
+    {
+      "gc_mode": 0,
+      "batch_1_to_2_pair_envelope_gap_s": 5.60459264
+    },
+    {
+      "gc_mode": 1,
+      "batch_1_to_2_pair_envelope_gap_s": 0.00961228799999958
+    }
+  ],
+  "not_reproduced": [
+    "original raw alignment runs or per-base CIGAR checks",
+    "raw device/host traces",
+    "per-job FIFO replay, whose original job-duration trace is absent",
+    "native asynchronous queue performance"
+  ],
+  "scope": "Checks arithmetic and consistency of preserved derived tables; not independent raw evidence."
+}

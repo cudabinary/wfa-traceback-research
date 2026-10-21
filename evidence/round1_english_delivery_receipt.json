@@ -1,0 +1,205 @@
+{
+  "status": "LOCAL_ENGLISH_ZIP_CRC_CONTENTS_AND_SHA256_PASS",
+  "zip_relative_path": "local_only/deliveries/wfa_round1_english_20261021_cecb0dc.zip",
+  "zip_bytes": 55910,
+  "zip_sha256": "d9f63b1932dabfa1fa326fba745374399d819b32498dec58c94e5b9bb89b0e56",
+  "entry_count": 31,
+  "entries": [
+    {
+      "path": "MANIFEST.json",
+      "bytes": 5046,
+      "sha256": "c5b869a85df08b3d1d88f77c3341f3e7d03b18b47682fb649b95a580526d8440",
+      "CRC32": "ade758ae"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 1729,
+      "sha256": "658364709155cc61d46423fa3f8412d766a4707bfa51b8aa932c2f0b1a1fe283",
+      "CRC32": "e253c00f"
+    },
+    {
+      "path": "REPORT.txt",
+      "bytes": 3303,
+      "sha256": "82662d9b7d8f334bb7f985a2660f2b2dcb15e29660986af54b380021f6412e5c",
+      "CRC32": "5eb71022"
+    },
+    {
+      "path": "REPRODUCE.txt",
+      "bytes": 1237,
+      "sha256": "a0008c0b1dc06439a42c85ede3ad7cbb055461e43f49ac406dbf305dac68e3ad",
+      "CRC32": "e6fbcce1"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "bytes": 2775,
+      "sha256": "73bb08be6c05e460f79c4c94aca01218134363a9b1c701017e04fbac293cc123",
+      "CRC32": "24d2b33c"
+    },
+    {
+      "path": "calculations/derived_table_recomputation.json",
+      "bytes": 1744,
+      "sha256": "310d3d49026117e66a366c08afc7980ce1b8c40cf11b114e6714b4997b2e071a",
+      "CRC32": "18364731"
+    },
+    {
+      "path": "code/recompute_round1_tables.py",
+      "bytes": 2439,
+      "sha256": "efd6cad6d89e64351d5f2abceb16f195d4606dece99c878dc5c53c3922562249",
+      "CRC32": "6c5b5ab7"
+    },
+    {
+      "path": "round1/README.txt",
+      "bytes": 2384,
+      "sha256": "15597fc888afb096fb944542c3ec75bcc1e3167496e60471590b50cfd86757e5",
+      "CRC32": "ad1dca9b"
+    },
+    {
+      "path": "round1/audit_results.json",
+      "bytes": 1578,
+      "sha256": "8945bc47d02ad8ac92fa04dd8e80f348afa1793ea2a29530a4cab59d1721fcfa",
+      "CRC32": "d0596b03"
+    },
+    {
+      "path": "round1/claims_and_falsifiers.csv",
+      "bytes": 2692,
+      "sha256": "7ff39b44a565524b2bf2cb76a29c4ab1952591fdc7ff9519c3765491ef82a2f9",
+      "CRC32": "0a8aa3bc"
+    },
+    {
+      "path": "round1/diagnostic_batches.csv",
+      "bytes": 6489,
+      "sha256": "9f0733e9c86888a6a1c321576f337ca7a50e744d89c5107113be947351837d79",
+      "CRC32": "3de90114"
+    },
+    {
+      "path": "round1/diagnostic_rescue_threads.csv",
+      "bytes": 510,
+      "sha256": "6f87dbf5a083646ea1992ff111c59e07fb37d4d2b06eeb3dda5b2ce1afc0821f",
+      "CRC32": "ee7f66d4"
+    },
+    {
+      "path": "round1/diagnostic_summary.json",
+      "bytes": 737,
+      "sha256": "d6dc43b3879ee765bfab32a022778508c9533cbe992fe213c802cd278942e208",
+      "CRC32": "60fe6fde"
+    },
+    {
+      "path": "round1/file_manifest.json",
+      "bytes": 4332,
+      "sha256": "d34d740c5383e52cfa38ab3a01f5a4e15b91a692b1f27591e847c87b3a1cb087",
+      "CRC32": "759e2f1a"
+    },
+    {
+      "path": "round1/first_round_validation.json",
+      "bytes": 769,
+      "sha256": "6ba4b31d2f0ea9370875320d2442f6ac0ede57d81cb025de534936281f32d958",
+      "CRC32": "f583669f"
+    },
+    {
+      "path": "round1/fixed_duration_fifo_replay.json",
+      "bytes": 1078,
+      "sha256": "ee0758024be8f631d7a03c4bad2022feaf42a1ec6085e58dc73efbbc0cc16521",
+      "CRC32": "c2c6e267"
+    },
+    {
+      "path": "round1/gpu_window_requirements.json",
+      "bytes": 1011,
+      "sha256": "872e56ad03d06371fe695ef7f2ff0b8c7f52e152e4987c6cf3cb2568057d3cd3",
+      "CRC32": "55bb1320"
+    },
+    {
+      "path": "round1/import_receipt.json",
+      "bytes": 4582,
+      "sha256": "07e4f0cfbce84060f3cd5a00194a14fca5e474830ee152b1df06a72b27642a31",
+      "CRC32": "9533e308"
+    },
+    {
+      "path": "round1/minimal_2x2_protocol.json",
+      "bytes": 8688,
+      "sha256": "3b018e11e937d3368c9817faa8eaee4807b85e579052fb49c6028915c62600eb",
+      "CRC32": "6c5c80e0"
+    },
+    {
+      "path": "round1/paired_contrasts.csv",
+      "bytes": 440,
+      "sha256": "f5aeab4503d46b862de5e728d55945f01a527125f7b3753b34bcc0bafb644275",
+      "CRC32": "5dea6e6a"
+    },
+    {
+      "path": "round1/primary_runs.csv",
+      "bytes": 1807,
+      "sha256": "acef842e1476cc1e7753a644b3ad3cee367a21f4fb7dd158b4e5e191053ed353",
+      "CRC32": "3084e5ee"
+    },
+    {
+      "path": "round1/queue_ownership_model.py",
+      "bytes": 6066,
+      "sha256": "74d3cdbd33bf567a50c7a4c59fa02d3335a2fcf69c01080a67ed9d5f240c51e0",
+      "CRC32": "530d7b51"
+    },
+    {
+      "path": "round1/queue_ownership_model_result.json",
+      "bytes": 2260,
+      "sha256": "d57f911b6cb5b22d30d4c720990b19871e9de68a6a7dd57aa815b155c45ef710",
+      "CRC32": "a584cb89"
+    },
+    {
+      "path": "round1/required_raw_identities.json",
+      "bytes": 33716,
+      "sha256": "1e98fccb6d93428b6bdc3031cac2e371ff7090f34fae5aff0922ae60eba9c319",
+      "CRC32": "9eac44d1"
+    },
+    {
+      "path": "round1/restoration_check.json",
+      "bytes": 34277,
+      "sha256": "3dac1d8d912f8b2193c33431e84a012e0bb0749ab984b2ad2eed720ced1567af",
+      "CRC32": "b77ebe14"
+    },
+    {
+      "path": "round1/scope_separation.json",
+      "bytes": 10348,
+      "sha256": "7ddae3b0371f87149e481480871c54416e76ccb523c51d5260edaff385553730",
+      "CRC32": "1cb68c9c"
+    },
+    {
+      "path": "round1/seed_tracked_file_hashes.json",
+      "bytes": 7262,
+      "sha256": "86b631114e5c3b6af92a44660193faf0e637cb15cbc09759c64b14c71b717f2d",
+      "CRC32": "0bd65b59"
+    },
+    {
+      "path": "round1/source_annotations.json",
+      "bytes": 7857,
+      "sha256": "9eab40e03cd9575e813a91dba03bc51ca1495010e771edbf279a0aace27b7a68",
+      "CRC32": "49cfdbf6"
+    },
+    {
+      "path": "round1/summary.json",
+      "bytes": 3590,
+      "sha256": "d98576d01acb2ffdf5d1f9713552ffe4099cd69b400eb86cc6fd0de67cd51cbf",
+      "CRC32": "cd5fb4b2"
+    },
+    {
+      "path": "source_reference/lib/align.cu",
+      "bytes": 40345,
+      "sha256": "0f3b7bc4dd56ccddd2c73160ec25a859b4492df479baf42f98fbfa4ac18fdea5",
+      "CRC32": "a006e860"
+    },
+    {
+      "path": "source_reference/utils/wfa_cpu.c",
+      "bytes": 9620,
+      "sha256": "af3aafa9a3e94a6adbc64b75f17ede2f78f31e992393ccb7ccbb19284a5d1f95",
+      "CRC32": "a3f120ab"
+    }
+  ],
+  "native_GPU_runs": 0,
+  "Library_upload": "NOT_PERFORMED",
+  "Library_ID": null,
+  "B2_transfer": "NOT_PERFORMED",
+  "extracted_reproduction_checks": {
+    "derived_arithmetic": "PASS",
+    "first_CPU_ownership_model": "PASS_252_STATES",
+    "native_raw_replay": false,
+    "separate_fresh_extraction": true
+  }
+}

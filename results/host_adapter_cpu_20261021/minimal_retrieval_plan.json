@@ -1,0 +1,151 @@
+{
+  "status": "OFFLINE_PLAN_NO_TRANSFER",
+  "catalogue_sha256": "e0c3c29037b2c47f74784df511ab0c2f0f031a55f3b441fd26a6cabaaf245f42",
+  "catalogue_object_version": {
+    "fileId": "4_z172529a471525cb5aa1e0f12_f107d88de6e992f36_d20261021_m031001_c005_v0501033_t0032_u01792552201536",
+    "fileName": "research-archive/papers/wfa-traceback/catalogues/raw-e0c3c29037b2c47f74784df511ab0c2f0f031a55f3b441fd26a6cabaaf245f42.jsonl.gz",
+    "bucketId": "172529a471525cb5aa1e0f12",
+    "contentLength": 1099892,
+    "contentSha1": "985827ee253db32bd329a4b7cce87f66decb915f",
+    "uploadTimestamp": 1792552201536,
+    "serverSideEncryption": {
+      "algorithm": "AES256",
+      "mode": "SSE-B2"
+    },
+    "action": "upload"
+  },
+  "sources": [
+    {
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/source/WFA-GPU_corrected.tar.gz",
+      "bytes": 1108320,
+      "sha256": "6519a817e52d72e74938937b7397ad653b319dde5652843a2c311e9d644e232f",
+      "extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 50705464,
+          "bytes": 1108320,
+          "pack_index": 329,
+          "pack_sha256": "881c2823242d2d359c3ba83e9f3cc3ebc7336653635fc9e3183d36fee0c797fb",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "bb25270d43fe070388da38c06ba9ce45cdb1a665",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad066674dc_d20261021_m002549_c005_v0501031_t0023_u01792542349517",
+            "fileName": "research-archive/packs/sha256/88/881c2823242d2d359c3ba83e9f3cc3ebc7336653635fc9e3183d36fee0c797fb.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792542349517
+          }
+        }
+      ],
+      "priority": "REQUIRED_FOR_ABI_AND_COPY_HELPER",
+      "status": "PINNED_NOT_DOWNLOADED_OR_RESTORED"
+    },
+    {
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.cpu_events.csv",
+      "bytes": 376575,
+      "sha256": "7c008c8a929f1a90a8c6f1c99a12d41d327dbaaa79ad1ea5a2f9aa8fd38e5b49",
+      "extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 36458167,
+          "bytes": 376575,
+          "pack_index": 402,
+          "pack_sha256": "5726863d4a0ece49eef3a520900b53f586480e123162903362c86916cbfa3903",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "8708a5800c64a2432de1a241f996bfb91dda78f6",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f10618bad0666bedf_d20261021_m003617_c005_v0501031_t0048_u01792542977580",
+            "fileName": "research-archive/packs/sha256/57/5726863d4a0ece49eef3a520900b53f586480e123162903362c86916cbfa3903.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792542977580
+          }
+        }
+      ],
+      "priority": "OPTIONAL_FOR_RAW_TRACE_RECHECK_NOT_NEEDED_FOR_CPU_CONTRACT",
+      "status": "PINNED_NOT_DOWNLOADED_OR_RESTORED"
+    },
+    {
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g0c20w32/gpu.host_events.csv",
+      "bytes": 4235,
+      "sha256": "7fd5519d19fb56b9a34f0581c3e286b8c284ceae1c6703c77a5db7d17a89ae9d",
+      "extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 38930870,
+          "bytes": 4235,
+          "pack_index": 411,
+          "pack_sha256": "7c2c25dd0b335f081116e905bfa1311bb4d25304757f080dacdf81f8a9a97429",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "7f880b03227e1e1824dca61224a18d93093677ca",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827d3fb5_d20261021_m003721_c005_v0501048_t0045_u01792543041608",
+            "fileName": "research-archive/packs/sha256/7c/7c2c25dd0b335f081116e905bfa1311bb4d25304757f080dacdf81f8a9a97429.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792543041608
+          }
+        }
+      ],
+      "priority": "OPTIONAL_FOR_RAW_TRACE_RECHECK_NOT_NEEDED_FOR_CPU_CONTRACT",
+      "status": "PINNED_NOT_DOWNLOADED_OR_RESTORED"
+    },
+    {
+      "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/raw/runs/diag_g1c20w32/gpu.host_events.csv",
+      "bytes": 4232,
+      "sha256": "80af2494d04ab5e9b7df40afea21446bf0bb024458f9e18c7280e0eea5bfcf55",
+      "extents": [
+        {
+          "file_offset": 0,
+          "pack_offset": 55818608,
+          "bytes": 4232,
+          "pack_index": 413,
+          "pack_sha256": "fecf5ddee18e76b9296676aef78489aaf1ac62e263d947846935fd0f48f164fc",
+          "remote": {
+            "action": "upload",
+            "bucketId": "172529a471525cb5aa1e0f12",
+            "contentLength": 67108864,
+            "contentSha1": "48e73272fa0deb2af91a8ee71f2aa72d3186f8f6",
+            "fileId": "4_z172529a471525cb5aa1e0f12_f1016ad82827d43d3_d20261021_m003736_c005_v0501048_t0036_u01792543056706",
+            "fileName": "research-archive/packs/sha256/fe/fecf5ddee18e76b9296676aef78489aaf1ac62e263d947846935fd0f48f164fc.pack",
+            "serverSideEncryption": {
+              "algorithm": "AES256",
+              "mode": "SSE-B2"
+            },
+            "uploadTimestamp": 1792543056706
+          }
+        }
+      ],
+      "priority": "OPTIONAL_FOR_RAW_TRACE_RECHECK_NOT_NEEDED_FOR_CPU_CONTRACT",
+      "status": "PINNED_NOT_DOWNLOADED_OR_RESTORED"
+    }
+  ],
+  "required_logical_bytes": 1108320,
+  "required_fresh_full_pack_download_bytes": 67108864,
+  "optional_raw_trace_logical_bytes": 385042,
+  "optional_raw_trace_fresh_full_pack_download_bytes": 201326592,
+  "required_plus_optional_distinct_full_pack_bytes": 268435456,
+  "required_archive_members_to_inspect": [
+    "WFA-GPU/lib/wfa_types.h",
+    "WFA-GPU/lib/alignment_results.h",
+    "WFA-GPU/lib/sequence_alignment.cu",
+    "WFA-GPU/lib/sequence_alignment.cuh",
+    "WFA-GPU/lib/kernels/sequence_alignment_kernel.cuh",
+    "WFA-GPU/lib/kernels/common_alignment_kernels.cuh"
+  ],
+  "reuse": "Two exact preserved source members are already reused locally. Setup restores did not retain complete downloaded packs on disk in the inspected setup subtree. A supplied matching local pack or logical archive would reduce new transfer need; verify its complete hash before reuse.",
+  "restore_rule": "Pin fileId/version, verify full pack SHA256, concatenate extents by file_offset, verify full logical bytes and SHA256; inspect only required members in a separate destination.",
+  "prohibited_now": "No remote restore/upload or B2 transfer is performed. No name-only version choice or full 111-input restore."
+}

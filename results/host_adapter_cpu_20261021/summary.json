@@ -1,0 +1,19 @@
+{
+  "base_commit": "cecb0dc9d5e6a7baba97e49a63309337a9bb8524",
+  "status": "CPU_ADAPTER_CONTRACT_AND_LOCAL_DELIVERY_COMPLETE",
+  "normal_cases": 6,
+  "normal_states": 830,
+  "counterexamples": 6,
+  "new_native_runs": 0,
+  "new_compilations": 0,
+  "B2_transfer_bytes": 0,
+  "missing_pinned_archive_logical_bytes": 1108320,
+  "required_fresh_pack_bytes": 67108864,
+  "full_raw_restore_performed": false,
+  "header_and_copy_helper_confirmation": "BLOCKED_PENDING_EXACT_PINNED_BYTES",
+  "native_host_diff": "NOT_WRITTEN_AGAINST_MISSING_HEADERS",
+  "Library_status": "NOT_ATTEMPTED_OFFICIAL_ZIP_TOOL_UNAVAILABLE",
+  "Library_ID": null,
+  "GitHub_destination_private_checked": true,
+  "old_round1_originals_modified": false
+}

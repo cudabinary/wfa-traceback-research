@@ -1,0 +1,208 @@
+{
+  "status": "BOUNDED_ADAPTER_MODEL_PASS_WITH_EXPECTED_COUNTEREXAMPLES",
+  "normal_cases": [
+    {
+      "status": "PASS",
+      "batches": 3,
+      "slots": 2,
+      "gated": false,
+      "mutant": null,
+      "states_explored": 89,
+      "transitions": 154,
+      "terminal_states": 1,
+      "slot_wait_states": 3,
+      "deadlock_witness": null
+    },
+    {
+      "status": "PASS",
+      "batches": 3,
+      "slots": 2,
+      "gated": true,
+      "mutant": null,
+      "states_explored": 47,
+      "transitions": 58,
+      "terminal_states": 1,
+      "slot_wait_states": 0,
+      "deadlock_witness": null
+    },
+    {
+      "status": "PASS",
+      "batches": 4,
+      "slots": 2,
+      "gated": false,
+      "mutant": null,
+      "states_explored": 126,
+      "transitions": 223,
+      "terminal_states": 1,
+      "slot_wait_states": 6,
+      "deadlock_witness": null
+    },
+    {
+      "status": "PASS",
+      "batches": 4,
+      "slots": 2,
+      "gated": true,
+      "mutant": null,
+      "states_explored": 63,
+      "transitions": 79,
+      "terminal_states": 1,
+      "slot_wait_states": 0,
+      "deadlock_witness": null
+    },
+    {
+      "status": "PASS",
+      "batches": 6,
+      "slots": 4,
+      "gated": false,
+      "mutant": null,
+      "states_explored": 410,
+      "transitions": 823,
+      "terminal_states": 1,
+      "slot_wait_states": 6,
+      "deadlock_witness": null
+    },
+    {
+      "status": "PASS",
+      "batches": 6,
+      "slots": 4,
+      "gated": true,
+      "mutant": null,
+      "states_explored": 95,
+      "transitions": 121,
+      "terminal_states": 1,
+      "slot_wait_states": 0,
+      "deadlock_witness": null
+    }
+  ],
+  "counterexamples": {
+    "one_slot_deferred_dispatch": {
+      "status": "DEADLOCK",
+      "batches": 2,
+      "slots": 1,
+      "gated": false,
+      "mutant": null,
+      "states_explored": 11,
+      "transitions": 12,
+      "terminal_states": 0,
+      "slot_wait_states": 1,
+      "deadlock_witness": [
+        "acquire slot 0 for batch 0",
+        "submit GPU 0; prior batch may enter CPU service",
+        "GPU 0 completes",
+        "pass submission gate for batch 0",
+        "enqueue D2H for batch 0",
+        "D2H batch 0 completes in slot 0",
+        "publish batch 0 to FIFO",
+        "advance after batch 0",
+        "unfinished circular wait: producer batch=1, phase=0, last_submitted=0, queued=((0, 0),), leases=(0,)"
+      ]
+    },
+    "missing_final_flush": {
+      "status": "DEADLOCK",
+      "batches": 1,
+      "slots": 2,
+      "gated": false,
+      "mutant": "omit_final_flush",
+      "states_explored": 11,
+      "transitions": 12,
+      "terminal_states": 0,
+      "slot_wait_states": 0,
+      "deadlock_witness": [
+        "acquire slot 0 for batch 0",
+        "submit GPU 0; prior batch may enter CPU service",
+        "GPU 0 completes",
+        "pass submission gate for batch 0",
+        "enqueue D2H for batch 0",
+        "D2H batch 0 completes in slot 0",
+        "publish batch 0 to FIFO",
+        "advance after batch 0",
+        "unfinished circular wait: producer batch=0, phase=7, last_submitted=0, queued=((0, 0),), leases=(0, -1)"
+      ]
+    },
+    "publish_before_D2H_done": {
+      "status": "COUNTEREXAMPLE",
+      "reason": "READY published before D2H completion",
+      "witness": [
+        "acquire slot 0 for batch 0",
+        "submit GPU 0; prior batch may enter CPU service",
+        "pass submission gate for batch 0",
+        "enqueue D2H for batch 0",
+        "publish batch 0 with payload owner -1"
+      ],
+      "states_explored": 8
+    },
+    "release_before_normal_RLE": {
+      "status": "COUNTEREXAMPLE",
+      "reason": "slot overwritten before normal RLE completed",
+      "witness": [
+        "acquire slot 0 for batch 0",
+        "submit GPU 0; prior batch may enter CPU service",
+        "GPU 0 completes",
+        "pass submission gate for batch 0",
+        "enqueue D2H for batch 0",
+        "D2H batch 0 completes in slot 0",
+        "publish batch 0 to FIFO",
+        "advance after batch 0",
+        "acquire slot 1 for batch 1",
+        "submit GPU 1; prior batch may enter CPU service",
+        "GPU 1 completes",
+        "pass submission gate for batch 1",
+        "enqueue D2H for batch 1",
+        "D2H batch 1 completes in slot 1",
+        "publish batch 1 to FIFO",
+        "advance after batch 1",
+        "CPU rescue starts batch 0",
+        "rescue batch 0 ends; UNSAFE early release",
+        "acquire slot 0 for batch 2",
+        "submit GPU 2; prior batch may enter CPU service",
+        "GPU 2 completes",
+        "pass submission gate for batch 2",
+        "enqueue D2H for batch 2",
+        "D2H batch 2 completes in slot 0",
+        "RLE batch 0 sees payload from 2"
+      ],
+      "states_explored": 72
+    }
+  },
+  "index_counterexamples": {
+    "correct_global_IDs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "slot_index_as_global_from": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      0
+    ],
+    "fixed_full_batch_count_on_tail": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "interpretation": "For this acquire-before-submit and next-submit-deferred CPU contract, Q=1 can deadlock, Q>=2 passed only the finite cases above. This is not a universal queue-size theorem.",
+  "unproved": [
+    "C++/OpenMP/CUDA memory ordering",
+    "real pointer and stream behavior",
+    "ABI sizes",
+    "allocation or cancellation faults",
+    "alignment correctness",
+    "native race freedom",
+    "performance"
+  ]
+}
