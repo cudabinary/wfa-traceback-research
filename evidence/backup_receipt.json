@@ -1,0 +1,78 @@
+{
+  "status": "CONTENT_COMMIT_PRIVATE_REMOTE_AND_B2_RESTORE_VERIFIED",
+  "verified_utc": "2026-10-21T03:11:16.681849+00:00",
+  "content_git_commit": "b8b8d72e073316003ef57277d84fb1e03491621b",
+  "private_repository": "https://github.com/cudabinary/wfa-traceback-research",
+  "bucket": "cudabinary-research-archive-20261021",
+  "paper_prefix": "research-archive/papers/wfa-traceback/",
+  "manifest": {
+    "sha256": "548bdbf6965666b37cb85d6956d8292a29fa22d3f8706b8eac165d051716f5d4",
+    "remote": {
+      "fileId": "4_z172529a471525cb5aa1e0f12_f109eeb38551726ab_d20261021_m031117_c005_v0501036_t0009_u01792552277533",
+      "fileName": "research-archive/papers/wfa-traceback/manifests/content-b8b8d72e073316003ef57277d84fb1e03491621b.json",
+      "bucketId": "172529a471525cb5aa1e0f12",
+      "contentLength": 2784,
+      "contentSha1": "5545ad6db301cff5f625957fc7db92d085a3de57",
+      "uploadTimestamp": 1792552277533,
+      "serverSideEncryption": {
+        "algorithm": "AES256",
+        "mode": "SSE-B2"
+      },
+      "action": "upload"
+    }
+  },
+  "git_bundle": {
+    "sha256": "dd47464e60e64ef5766b2e7d61ec1f776975c799f2edd54c7ba77a8ce5f99ae2",
+    "remote": {
+      "fileId": "4_z172529a471525cb5aa1e0f12_f107d88de6e992fc4_d20261021_m031006_c005_v0501033_t0002_u01792552206521",
+      "fileName": "research-archive/papers/wfa-traceback/git/b8b8d72e073316003ef57277d84fb1e03491621b.bundle",
+      "bucketId": "172529a471525cb5aa1e0f12",
+      "contentLength": 556902,
+      "contentSha1": "01780e321bf82285e81bfe431161902073bc8ede",
+      "uploadTimestamp": 1792552206521,
+      "serverSideEncryption": {
+        "algorithm": "AES256",
+        "mode": "SSE-B2"
+      },
+      "action": "upload"
+    }
+  },
+  "raw_catalogue": {
+    "sha256": "e0c3c29037b2c47f74784df511ab0c2f0f031a55f3b441fd26a6cabaaf245f42",
+    "remote": {
+      "fileId": "4_z172529a471525cb5aa1e0f12_f107d88de6e992f36_d20261021_m031001_c005_v0501033_t0032_u01792552201536",
+      "fileName": "research-archive/papers/wfa-traceback/catalogues/raw-e0c3c29037b2c47f74784df511ab0c2f0f031a55f3b441fd26a6cabaaf245f42.jsonl.gz",
+      "bucketId": "172529a471525cb5aa1e0f12",
+      "contentLength": 1099892,
+      "contentSha1": "985827ee253db32bd329a4b7cce87f66decb915f",
+      "uploadTimestamp": 1792552201536,
+      "serverSideEncryption": {
+        "algorithm": "AES256",
+        "mode": "SSE-B2"
+      },
+      "action": "upload"
+    }
+  },
+  "raw_catalogue_entries": 15984,
+  "curated_checkout_recovery": {
+    "status": "PASS",
+    "commit": "b8b8d72e073316003ef57277d84fb1e03491621b",
+    "tracked_files_compared": 41,
+    "git_fsck": "PASS",
+    "initial_file_manifest": "PASS",
+    "bundle_sha256": "dd47464e60e64ef5766b2e7d61ec1f776975c799f2edd54c7ba77a8ce5f99ae2"
+  },
+  "historical_representative_restore": {
+    "status": "PASS",
+    "source_id": "WIN_PAPER/rtx4060ti_wfa_mechanism_20261019/model.py",
+    "sha256": "1dbdafa67b7c3265b78fbef146e64e6ea57ae5f05e17c451c1fd29eae3006ca7",
+    "bytes": 6375,
+    "remote_pack_file_ids": [
+      "4_z172529a471525cb5aa1e0f12_f1016ad82827a9e54_d20261020_m235954_c005_v0501048_t0035_u01792540794857"
+    ],
+    "method": "Fresh full-pack remote read, pack SHA256, exact extent reconstruction, complete logical-file SHA256"
+  },
+  "original_deletions": 0,
+  "new_research_results_imported": false,
+  "scope": "Historical selected files and referenced global raw objects. Actual invoice/account charges are unverified because the existing browser session expired."
+}
